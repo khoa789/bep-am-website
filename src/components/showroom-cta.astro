@@ -1,0 +1,159 @@
+---
+import { contact } from "../data/site-content";
+---
+
+<section class="section showroom" id="showroom" aria-labelledby="showroom-title">
+  <div class="container showroom-grid">
+    <div class="showroom-message">
+      <p class="eyebrow">Đến để nhìn, chạm và cảm nhận</p>
+      <h2 id="showroom-title">Chọn Bếp Ấm là xong một việc lớn trong đời.</h2>
+      <p class="lede">
+        Một căn bếp đáng để cân nhắc kỹ. Ghé showroom, Bếp Ấm sẽ cùng bạn xem từng vật
+        liệu, thử từng thao tác và nói rõ điều gì phù hợp với gia đình mình.
+      </p>
+      <div class="showroom-actions">
+        <a class="button button--primary" href={contact.mapHref} target="_blank" rel="noreferrer">
+          Xem đường đến showroom
+        </a>
+        <a class="button button--secondary" href={contact.phoneHref}>
+          Gọi {contact.phoneDisplay}
+        </a>
+      </div>
+    </div>
+
+    <address class="showroom-card">
+      <p class="showroom-card__label">Bếp Ấm · Cần Thơ</p>
+      <p class="showroom-card__address">{contact.address}</p>
+      <dl>
+        <div>
+          <dt>Giờ mở cửa</dt>
+          <dd>{contact.openingHours}</dd>
+        </div>
+        <div>
+          <dt>Hotline</dt>
+          <dd><a href={contact.phoneHref}>{contact.phoneDisplay}</a></dd>
+        </div>
+        <div>
+          <dt>Kết nối</dt>
+          <dd>
+            <a href={contact.facebookHref} target="_blank" rel="noreferrer">Facebook Bếp Ấm</a>
+          </dd>
+        </div>
+      </dl>
+    </address>
+  </div>
+</section>
+
+<style>
+  .showroom {
+    color: white;
+    background: var(--color-brand-deep);
+  }
+
+  .showroom-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(19rem, 0.65fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+
+  .showroom .eyebrow {
+    color: white;
+  }
+
+  .showroom .lede {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .showroom-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .showroom .button--secondary {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.65);
+  }
+
+  .showroom .button--secondary:hover {
+    color: var(--color-brand-deep);
+    background: white;
+  }
+
+  .showroom-card {
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 4px;
+    font-style: normal;
+  }
+
+  .showroom-card__label {
+    margin: 0;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .showroom-card__address {
+    margin: 1.25rem 0 2.5rem;
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .showroom-card dl,
+  .showroom-card dd {
+    margin: 0;
+  }
+
+  .showroom-card dl {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .showroom-card dl div {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .showroom-card dt {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .showroom-card dd {
+    margin-top: 0.3rem;
+    font-weight: 700;
+  }
+
+  .showroom-card a {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .showroom-card a:hover {
+    color: white;
+    text-decoration-thickness: 2px;
+  }
+
+  @media (max-width: 56rem) {
+    .showroom-grid {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .showroom-actions {
+      display: grid;
+    }
+  }
+</style>

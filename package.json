@@ -1,0 +1,35 @@
+{
+  "name": "bep-am-website",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.18.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "cloudflare:preview": "pnpm build && wrangler dev",
+    "cloudflare:dry-run": "pnpm build && wrangler deploy --dry-run",
+    "deploy": "pnpm build && wrangler deploy"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.4",
+    "@react-three/fiber": "^9.7.0",
+    "astro": "^7.2.9",
+    "cookie": "2.0.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "@types/three": "^0.184.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.11",
+    "wrangler": "^4.127.1"
+  }
+}

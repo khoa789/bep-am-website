@@ -1,0 +1,152 @@
+---
+import { contact } from "../data/site-content";
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand-link" href="/#top" aria-label="Bếp Ấm - về đầu trang">
+      <img
+        src="/brand/bep-am-logo.png"
+        width="886"
+        height="822"
+        alt="Bếp Ấm - Bếp ấm, Nhà êm"
+      />
+    </a>
+
+    <nav class="desktop-nav" aria-label="Điều hướng chính">
+      <a href="/#giai-phap">Giải pháp</a>
+      <a href="/#ben-trong-lecmax">Bên trong Lecmax</a>
+      <a href="/#quy-trinh">Quy trình</a>
+      <a class="header-cta" href="/#showroom">Ghé showroom</a>
+    </nav>
+
+    <details class="mobile-nav">
+      <summary aria-label="Mở điều hướng">Menu</summary>
+      <nav aria-label="Điều hướng trên điện thoại">
+        <a href="/#giai-phap">Giải pháp</a>
+        <a href="/#ben-trong-lecmax">Bên trong Lecmax</a>
+        <a href="/#quy-trinh">Quy trình</a>
+        <a href="/#showroom">Ghé showroom</a>
+        <a href={contact.phoneHref}>Gọi {contact.phoneDisplay}</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: relative;
+    z-index: 100;
+    min-height: 5.5rem;
+    border-bottom: 1px solid var(--color-line);
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .header-inner {
+    min-height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .brand-link {
+    width: 5rem;
+    flex: 0 0 auto;
+    padding-block: 0.55rem;
+  }
+
+  .brand-link img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 2rem);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .desktop-nav a {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .desktop-nav a:not(.header-cta):hover {
+    color: var(--color-brand);
+  }
+
+  .header-cta {
+    padding-inline: 1rem;
+    border-radius: 4px;
+    color: var(--color-ink);
+    background: var(--color-action);
+  }
+
+  .header-cta:hover {
+    background: var(--color-action-hover);
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  @media (max-width: 51rem) {
+    .desktop-nav {
+      display: none;
+    }
+
+    .mobile-nav {
+      position: relative;
+      display: block;
+    }
+
+    .mobile-nav summary {
+      min-width: 4rem;
+      min-height: 2.75rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-brand);
+      border-radius: 4px;
+      color: var(--color-brand);
+      cursor: pointer;
+      font-weight: 700;
+      list-style: none;
+    }
+
+    .mobile-nav summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .mobile-nav nav {
+      position: absolute;
+      top: calc(100% + 0.75rem);
+      right: 0;
+      width: min(18rem, calc(100vw - 2.5rem));
+      display: grid;
+      padding: 0.75rem;
+      border: 1px solid var(--color-line);
+      background: white;
+      box-shadow: 0 16px 48px rgba(18, 18, 18, 0.1);
+    }
+
+    .mobile-nav nav a {
+      min-height: 3rem;
+      display: flex;
+      align-items: center;
+      padding-inline: 0.75rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .mobile-nav nav a:hover {
+      color: var(--color-brand);
+      background: var(--color-surface);
+    }
+  }
+</style>

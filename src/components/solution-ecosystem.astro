@@ -1,0 +1,220 @@
+---
+import { solutionLayers } from "../data/site-content";
+---
+
+<section class="section ecosystem" id="giai-phap" aria-labelledby="giai-phap-title">
+  <div class="container ecosystem-intro">
+    <div>
+      <p class="eyebrow">Một căn bếp · Bốn lớp giải pháp</p>
+      <h2 id="giai-phap-title">Chọn từng phần bằng cùng một tiêu chuẩn.</h2>
+    </div>
+    <p class="lede">
+      Bếp Ấm kết nối hệ tủ, mặt đá, thiết bị và vùng chậu thành một không gian vận hành
+      trọn vẹn — thay vì để khách hàng tự ghép nhiều lựa chọn rời rạc.
+    </p>
+  </div>
+
+  <div class="container layer-list">
+    {
+      solutionLayers.map((layer) => (
+        <article class="solution-layer" id={layer.id}>
+          <div class={`material-swatch material-swatch--${layer.material}`} aria-hidden="true" />
+          <p class="layer-order">{layer.order}</p>
+          <div class="layer-brand">
+            <h3>{layer.brand}</h3>
+            <p>{layer.role}</p>
+          </div>
+          <p class="layer-summary">{layer.summary}</p>
+          <ul class="layer-details" aria-label={`Các thành phần thuộc ${layer.brand}`}>
+            {layer.details.map((detail) => <li>{detail}</li>)}
+          </ul>
+        </article>
+      ))
+    }
+  </div>
+
+  <div class="container curator-note">
+    <p class="curator-label">Lớp kết nối</p>
+    <div>
+      <h3>Bếp Ấm nhận phần khó về mình.</h3>
+      <p>
+        Tư vấn, lựa chọn, phối hợp và hoàn thiện đều đi qua một tiêu chuẩn chung để mỗi
+        thành phần phù hợp với căn bếp và gia đình sử dụng nó.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ecosystem {
+    background: var(--color-surface);
+  }
+
+  .ecosystem-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.7fr);
+    align-items: end;
+    gap: clamp(2rem, 7vw, 7rem);
+  }
+
+  .ecosystem-intro .lede {
+    margin: 0;
+  }
+
+  .layer-list {
+    margin-top: clamp(3.5rem, 8vw, 7rem);
+    border-top: 1px solid var(--color-line);
+  }
+
+  .solution-layer {
+    min-height: 10rem;
+    display: grid;
+    grid-template-columns: 4rem 3.5rem minmax(12rem, 0.8fr) minmax(18rem, 1.25fr) minmax(12rem, 0.75fr);
+    align-items: center;
+    gap: clamp(1rem, 2.5vw, 2.5rem);
+    padding-block: 2rem;
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .material-swatch {
+    width: 3.25rem;
+    aspect-ratio: 1;
+    border: 1px solid rgba(36, 36, 36, 0.16);
+    border-radius: 4px;
+  }
+
+  .material-swatch--steel {
+    background: repeating-linear-gradient(92deg, #e5e4e2 0 2px, #f7f7f5 2px 5px);
+  }
+
+  .material-swatch--stone {
+    background:
+      linear-gradient(135deg, transparent 47%, rgba(36, 36, 36, 0.12) 48% 50%, transparent 51%),
+      #ece8e2;
+  }
+
+  .material-swatch--appliance {
+    background: #242424;
+    box-shadow: inset 0 0 0 9px #343434;
+  }
+
+  .material-swatch--water {
+    background:
+      radial-gradient(circle at 65% 35%, #ffffff 0 8%, transparent 9%),
+      #dce9e4;
+  }
+
+  .layer-order,
+  .curator-label {
+    margin: 0;
+    color: var(--color-brand);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  .layer-brand p,
+  .layer-summary,
+  .layer-details,
+  .curator-note p {
+    margin: 0;
+  }
+
+  .layer-brand p {
+    margin-top: 0.3rem;
+    color: var(--color-brand);
+    font-weight: 700;
+  }
+
+  .layer-summary {
+    color: var(--color-muted);
+  }
+
+  .layer-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .layer-details li {
+    padding: 0.35rem 0.55rem;
+    border: 1px solid var(--color-line);
+    border-radius: 2px;
+    background: white;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .curator-note {
+    display: grid;
+    grid-template-columns: 8rem minmax(0, 45rem);
+    justify-content: end;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    color: white;
+    background: var(--color-brand);
+  }
+
+  .curator-note .curator-label {
+    color: white;
+  }
+
+  .curator-note p:not(.curator-label) {
+    max-width: 39rem;
+    margin-top: 0.75rem;
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  @media (max-width: 64rem) {
+    .solution-layer {
+      grid-template-columns: 3.5rem 3rem 0.8fr 1.5fr;
+    }
+
+    .layer-details {
+      grid-column: 3 / -1;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .ecosystem-intro {
+      grid-template-columns: 1fr;
+      align-items: start;
+      gap: 1.5rem;
+    }
+
+    .solution-layer {
+      grid-template-columns: 3rem 1fr;
+      align-items: start;
+      gap: 0.75rem 1rem;
+      padding-block: 2rem;
+    }
+
+    .material-swatch {
+      grid-row: span 2;
+    }
+
+    .layer-order {
+      position: absolute;
+      opacity: 0;
+    }
+
+    .layer-brand,
+    .layer-summary,
+    .layer-details {
+      grid-column: 2;
+    }
+
+    .layer-details {
+      margin-top: 0.25rem;
+    }
+
+    .curator-note {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+  }
+</style>
