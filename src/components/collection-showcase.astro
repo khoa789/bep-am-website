@@ -1,0 +1,44 @@
+---
+import { collections } from "../data/editorial-content";
+---
+
+<section
+  class="section container collections"
+  id="bo-suu-tap"
+  aria-labelledby="collections-title"
+>
+  <div class="story-heading">
+    <h2 id="collections-title">
+      Bộ sưu tập <em>bếp đẹp.</em>
+    </h2>
+    <p>
+      Một căn bếp mang dấu ấn của bạn. Khám phá ý tưởng theo không gian, phong
+      cách và nhịp sống.
+    </p>
+  </div>
+  <div class="collection-list">
+    {collections.map((item, index) => (
+      <a class="collection-link" href={`/bo-suu-tap/${item.slug}/`}>
+        <img
+          src={`/images/${item.image}-800.webp`}
+          width="800"
+          height="450"
+          loading="lazy"
+          alt={item.title}
+        />
+        <div>
+          <span class="collection-index">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <h3>{item.title}</h3>
+          <p>{item.intro}</p>
+          <span class="text-link">Khám phá bộ sưu tập ↗</span>
+        </div>
+      </a>
+    ))}
+  </div>
+  <p class="source-note">
+    Hình ảnh phối cảnh ý tưởng tạo bằng AI, lấy cảm hứng từ vật liệu Lecmax.
+    Không đại diện công trình đã thi công.
+  </p>
+</section>

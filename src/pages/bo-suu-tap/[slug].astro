@@ -1,0 +1,68 @@
+---
+import EditorialLayout from "../../layouts/editorial-layout.astro";
+import { collections, kitchenConcepts } from "../../data/editorial-content";
+export function getStaticPaths() {
+  return collections.map((collection) => ({
+    params: { slug: collection.slug },
+    props: { collection },
+  }));
+}
+const { collection } = Astro.props;
+---
+
+<EditorialLayout
+  title={collection.title}
+  description={collection.description}
+  image={`/images/${collection.image}-1600.webp`}
+  category="Bộ sưu tập bếp đẹp"
+>
+  <figure class="editorial-cover">
+    <img
+      src={`/images/${collection.image}-1600.webp`}
+      width="1600"
+      height="900"
+      alt={kitchenConcepts.find((item) => item.image === collection.image)?.alt}
+    />
+    <figcaption>
+      Phối cảnh ý tưởng tạo bằng AI, lấy cảm hứng từ vật liệu Lecmax. Cấu hình
+      được tư vấn theo mặt bằng thực tế.
+    </figcaption>
+  </figure>
+  <div class="editorial-prose">
+    <h2>{collection.intro}</h2>
+    {collection.sections.map((section) => (
+      <section>
+        <h3>{section.title}</h3>
+        <p>{section.body}</p>
+      </section>
+    ))}
+  </div>
+  <div class="collection-gallery">
+    {collection.images
+      .filter((number) => `kitchen-concept-${number}` !== collection.image)
+      .map((number) => (
+        <figure>
+          <img
+            src={`/images/kitchen-concept-${number}-1600.webp`}
+            width="1600"
+            height="900"
+            loading="lazy"
+            alt={kitchenConcepts[number - 1].alt}
+          />
+          <figcaption>
+            {kitchenConcepts[number - 1].title} · Phối cảnh AI
+          </figcaption>
+        </figure>
+      ))}
+  </div>
+  <a class="button button--primary" href="#tu-van">
+    Tư vấn cho không gian của bạn ↗
+  </a>
+  <nav class="related-links" aria-label="Bộ sưu tập khác">
+    {collections
+      .filter((item) => item.slug !== collection.slug)
+      .map((item) => (
+        <a href={`/bo-suu-tap/${item.slug}/`}>{item.title} ↗</a>
+      ))}
+  </nav>
+</EditorialLayout>

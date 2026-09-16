@@ -1,0 +1,52 @@
+---
+import EditorialLayout from "../../layouts/editorial-layout.astro";
+import { articles } from "../../data/editorial-content";
+export function getStaticPaths() {
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+const { article } = Astro.props;
+---
+
+<EditorialLayout
+  title={article.title}
+  description={article.intro}
+  image={`/images/${article.image}`}
+  category={article.category}
+>
+  <figure class="editorial-cover">
+    <img
+      src={`/images/${article.image}`}
+      width="1200"
+      height="800"
+      alt={article.title}
+    />
+    <figcaption>
+      {article.image.startsWith("kitchen-concept")
+        ? "Phối cảnh ý tưởng tạo bằng AI."
+        : article.image.startsWith("lecmax")
+          ? "Ảnh phụ kiện từ thư viện showroom Lecmax Hà Nội."
+          : "Ảnh thực tế tại showroom Bếp Ấm."}
+    </figcaption>
+  </figure>
+  <div class="editorial-prose">
+    {article.sections.map((section) => (
+      <section>
+        <h2>{section.title}</h2>
+        <p>{section.body}</p>
+      </section>
+    ))}
+  </div>
+  <a class="button button--primary" href="#tu-van">
+    Đặt lịch tư vấn ↗
+  </a>
+  <nav class="related-links" aria-label="Bài viết liên quan">
+    {articles
+      .filter((item) => item.slug !== article.slug)
+      .map((item) => (
+        <a href={`/kien-thuc/${item.slug}/`}>{item.title} ↗</a>
+      ))}
+  </nav>
+</EditorialLayout>

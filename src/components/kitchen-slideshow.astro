@@ -1,0 +1,228 @@
+---
+import { kitchenConcepts } from "../data/editorial-content";
+---
+
+<section
+  class="kitchen-slideshow"
+  aria-label="Cảm hứng bếp đẹp"
+  aria-roledescription="trình chiếu"
+  data-carousel
+>
+  <div class="slides">
+    {kitchenConcepts.map((item, index) => (
+      <div
+        class:list={["slide", { "is-active": index === 0 }]}
+        aria-hidden={index !== 0}
+        data-slide
+      >
+        <img
+          src={`/images/${item.image}-1600.webp`}
+          srcset={`/images/${item.image}-800.webp 800w, /images/${item.image}-1600.webp 1600w`}
+          sizes="(max-width: 1280px) 100vw, 1200px"
+          width="1600"
+          height="900"
+          alt={item.alt}
+          fetchpriority={index === 0 ? "high" : "auto"}
+          loading={index === 0 ? "eager" : "lazy"}
+        />
+      </div>
+    ))}
+  </div>
+  <p
+    class="slide-status"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+    data-slide-status
+  ></p>
+  <div class="slideshow-caption">
+    <p>
+      <span data-slide-title>{kitchenConcepts[0].title}</span>
+      <small>Phối cảnh ý tưởng tạo bằng AI · Cảm hứng vật liệu Lecmax</small>
+    </p>
+    <div class="slideshow-controls" hidden>
+      <button type="button" data-previous aria-label="Ảnh trước">
+        ←
+      </button>
+      <span data-slide-count aria-live="off">
+        1 / 5
+      </span>
+      <button type="button" data-next aria-label="Ảnh tiếp theo">
+        →
+      </button>
+      <button type="button" data-toggle>
+        Tạm dừng
+      </button>
+    </div>
+  </div>
+</section>
+<script>
+  import { kitchenConcepts } from "../data/editorial-content";
+  document.querySelectorAll<HTMLElement>("[data-carousel]").forEach((root) => {
+    const slides = [...root.querySelectorAll<HTMLElement>("[data-slide]")];
+    const controls = root.querySelector<HTMLElement>(".slideshow-controls")!;
+    const toggle = root.querySelector<HTMLButtonElement>("[data-toggle]")!;
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+    let index = 0;
+    let paused = reduced.matches;
+    let hovered = false;
+    let focused = false;
+    let visible = false;
+    let timer: ReturnType<typeof setInterval> | undefined;
+    controls.hidden = false;
+    function show(next: number, announce = false) {
+      index = (next + slides.length) % slides.length;
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("is-active", i === index);
+        slide.setAttribute("aria-hidden", String(i !== index));
+      });
+      root.querySelector("[data-slide-title]")!.textContent =
+        kitchenConcepts[index].title;
+      root.querySelector("[data-slide-count]")!.textContent =
+        `${index + 1} / ${slides.length}`;
+      root.dataset.index = String(index);
+      if (announce)
+        root.querySelector("[data-slide-status]")!.textContent =
+          `Ảnh ${index + 1} trên ${slides.length}: ${kitchenConcepts[index].title}`;
+    }
+    function sync() {
+      clearInterval(timer);
+      toggle.textContent = paused ? "Phát tự động" : "Tạm dừng";
+      if (!paused && !hovered && !focused && visible && !document.hidden)
+        timer = setInterval(() => show(index + 1), 2000);
+    }
+    root.querySelector("[data-previous]")!.addEventListener("click", () => {
+      paused = true;
+      show(index - 1, true);
+      sync();
+    });
+    root.querySelector("[data-next]")!.addEventListener("click", () => {
+      paused = true;
+      show(index + 1, true);
+      sync();
+    });
+    toggle.addEventListener("click", () => {
+      paused = !paused;
+      sync();
+    });
+    root.addEventListener("mouseenter", () => {
+      hovered = true;
+      sync();
+    });
+    root.addEventListener("mouseleave", () => {
+      hovered = false;
+      sync();
+    });
+    root.addEventListener("focusin", () => {
+      focused = true;
+      sync();
+    });
+    root.addEventListener("focusout", (event) => {
+      focused = root.contains(event.relatedTarget as Node);
+      sync();
+    });
+    reduced.addEventListener("change", () => {
+      paused = reduced.matches;
+      sync();
+    });
+    document.addEventListener("visibilitychange", sync);
+    new IntersectionObserver(
+      ([entry]) => {
+        visible = entry.isIntersecting;
+        sync();
+      },
+      { threshold: 0.15 },
+    ).observe(root);
+    show(0);
+    sync();
+  });
+</script>
+<style>
+  .slide-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .slides {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: var(--color-surface);
+  }
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 450ms ease-out;
+  }
+  .slide.is-active {
+    opacity: 1;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slideshow-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  .slideshow-caption p {
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+  small {
+    display: block;
+    color: var(--color-muted);
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+  .slideshow-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    font-size: 0.8125rem;
+  }
+  .slideshow-controls[hidden] {
+    display: none;
+  }
+  button {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.5rem;
+    border: 1px solid var(--color-line);
+    background: transparent;
+    color: var(--color-ink);
+    cursor: pointer;
+    font: inherit;
+  }
+  button:hover {
+    background: var(--color-surface);
+  }
+  button:active {
+    transform: translateY(2px);
+  }
+  @media (max-width: 600px) {
+    .slides {
+      aspect-ratio: 4/3;
+    }
+    .slideshow-caption {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .slide {
+      transition: none;
+    }
+  }
+</style>

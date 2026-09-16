@@ -1,0 +1,53 @@
+---
+import { articles } from "../data/editorial-content";
+import { contact } from "../data/site-content";
+---
+
+<section
+  class="section container"
+  id="kien-thuc"
+  aria-labelledby="knowledge-title"
+>
+  <div class="story-heading">
+    <h2 id="knowledge-title">
+      Hiểu bếp hơn.
+      <br />
+      <em>Sống cùng bếp tốt hơn.</em>
+    </h2>
+    <p>Kiến thức thiết kế, thói quen nấu nướng và những cuộc gặp tại Bếp Ấm.</p>
+  </div>
+  <div class="knowledge-list">
+    {articles.map((item) => (
+      <a href={`/kien-thuc/${item.slug}/`}>
+        <span>{item.category}</span>
+        <h3>{item.title}</h3>
+        <span aria-hidden="true">↗</span>
+      </a>
+    ))}
+  </div>
+  <div class="workshop-story">
+    <img
+      src="/images/showroom-conversation.webp"
+      width="1200"
+      height="900"
+      loading="lazy"
+      alt="Một buổi trao đổi với khách tham dự tại showroom Bếp Ấm"
+    />
+    <div>
+      <h3>Gặp gỡ & workshop tại Bếp Ấm</h3>
+      <p>
+        Cùng trao đổi về vật liệu, thiết kế và cách sử dụng căn bếp. Theo dõi
+        trang Facebook chính thức để biết các hoạt động và lịch workshop được
+        công bố.
+      </p>
+      <a
+        class="text-link"
+        href={contact.facebookHref}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Theo dõi hoạt động Bếp Ấm ↗
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,85 @@
+---
+const youtube = [
+  { id: "18L6qUd8t04", title: "Khai trương showroom Bếp Ấm tại Cần Thơ" },
+  { id: "5VA73itoqx0", title: "Khám phá showroom Lecmax Home tại Cần Thơ" },
+];
+---
+
+<section
+  class="section container"
+  id="video-showroom"
+  aria-labelledby="media-title"
+>
+  <div class="story-heading">
+    <h2 id="media-title">
+      Ghé Bếp Ấm,
+      <br />
+      <em>qua từng thước phim.</em>
+    </h2>
+    <p>
+      Xem không gian, gặp con người và nhìn những phụ kiện chuyển động trước khi
+      đến trải nghiệm trực tiếp.
+    </p>
+  </div>
+  <div class="youtube-grid">
+    {youtube.map((video) => (
+      <article>
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${video.id}`}
+          title={video.title}
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h3>{video.title}</h3>
+        <a
+          class="text-link"
+          href={`https://www.youtube.com/watch?v=${video.id}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Xem trên YouTube ↗
+        </a>
+      </article>
+    ))}
+  </div>
+  <div class="showroom-moments">
+    <figure class="showroom-moment-photo">
+      <img
+        src="/images/showroom-gathering.webp"
+        width="1200"
+        height="900"
+        loading="lazy"
+        alt="Khách tham dự trao đổi và xem sản phẩm trong showroom Bếp Ấm"
+      />
+      <figcaption>Những cuộc trò chuyện tại showroom</figcaption>
+    </figure>
+    <figure>
+      <video
+        controls
+        playsinline
+        preload="none"
+        poster="/images/showroom-tour-poster.webp"
+        aria-label="Video ngắn tham quan showroom Bếp Ấm"
+      >
+        <source src="/videos/showroom-tour.mp4" type="video/mp4" />
+        <a href="/videos/showroom-tour.mp4">Mở video showroom</a>
+      </video>
+      <figcaption>Một vòng không gian trưng bày · 6 giây</figcaption>
+    </figure>
+    <figure>
+      <video
+        controls
+        playsinline
+        preload="none"
+        poster="/images/storage-in-action-poster.webp"
+        aria-label="Video thao tác mở phụ kiện lưu trữ tại showroom"
+      >
+        <source src="/videos/storage-in-action.mp4" type="video/mp4" />
+        <a href="/videos/storage-in-action.mp4">Mở video phụ kiện</a>
+      </video>
+      <figcaption>Kéo mở phụ kiện lưu trữ · 4 giây</figcaption>
+    </figure>
+  </div>
+</section>
