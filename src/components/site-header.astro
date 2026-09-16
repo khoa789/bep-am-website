@@ -1,152 +1,150 @@
 ---
-import { contact } from "../data/site-content";
+const links = [
+  { href: "/#cong-trinh", label: "Không gian bếp" },
+  { href: "/#giai-phap", label: "Giải pháp" },
+  { href: "/#ben-trong-lecmax", label: "Vật liệu" },
+  { href: "/#showroom", label: "Showroom" },
+];
 ---
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand-link" href="/#top" aria-label="Bếp Ấm - về đầu trang">
-      <img
-        src="/brand/bep-am-logo.png"
-        width="886"
-        height="822"
-        alt="Bếp Ấm - Bếp ấm, Nhà êm"
-      />
-    </a>
-
-    <nav class="desktop-nav" aria-label="Điều hướng chính">
-      <a href="/#giai-phap">Giải pháp</a>
-      <a href="/#ben-trong-lecmax">Bên trong Lecmax</a>
-      <a href="/#quy-trinh">Quy trình</a>
-      <a class="header-cta" href="/#showroom">Ghé showroom</a>
+<header class="site-header container">
+  <a class="brand-link" href="/#top" aria-label="Bếp Ấm, về đầu trang">
+    <img
+      src="/brand/bep-am-logo.svg"
+      width="357"
+      height="336"
+      alt="Bếp Ấm, Bếp ấm, Nhà êm"
+    />
+  </a>
+  <nav class="desktop-nav" aria-label="Điều hướng chính">
+    {links.map((link) => (
+      <a href={link.href}>{link.label}</a>
+    ))}
+  </nav>
+  <a class="button button--primary header-cta" href="/#tu-van">
+    Đặt lịch tư vấn <span aria-hidden="true">↗</span>
+  </a>
+  <details class="mobile-nav">
+    <summary>Menu</summary>
+    <nav aria-label="Điều hướng trên điện thoại">
+      {links.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+      <a href="/#tu-van">Đặt lịch tư vấn</a>
     </nav>
-
-    <details class="mobile-nav">
-      <summary aria-label="Mở điều hướng">Menu</summary>
-      <nav aria-label="Điều hướng trên điện thoại">
-        <a href="/#giai-phap">Giải pháp</a>
-        <a href="/#ben-trong-lecmax">Bên trong Lecmax</a>
-        <a href="/#quy-trinh">Quy trình</a>
-        <a href="/#showroom">Ghé showroom</a>
-        <a href={contact.phoneHref}>Gọi {contact.phoneDisplay}</a>
-      </nav>
-    </details>
-  </div>
+  </details>
 </header>
-
+<script>
+  document
+    .querySelectorAll<HTMLDetailsElement>(".mobile-nav")
+    .forEach((menu) => {
+      menu.querySelectorAll("a").forEach((link) =>
+        link.addEventListener("click", () => {
+          menu.open = false;
+        }),
+      );
+      menu.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          menu.open = false;
+          menu.querySelector("summary")?.focus();
+        }
+      });
+    });
+</script>
 <style>
   .site-header {
     position: relative;
-    z-index: 100;
-    min-height: 5.5rem;
-    border-bottom: 1px solid var(--color-line);
-    background: rgba(255, 255, 255, 0.96);
-  }
-
-  .header-inner {
-    min-height: 5.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 2rem;
+    justify-content: space-between;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--color-line);
+    z-index: 3;
   }
-
   .brand-link {
-    width: 5rem;
-    flex: 0 0 auto;
-    padding-block: 0.55rem;
+    display: block;
+    flex-shrink: 0;
+    width: 88px;
+    padding-block: 4px;
   }
-
   .brand-link img {
-    width: 100%;
-    height: auto;
+    width: 88px;
   }
-
   .desktop-nav {
     display: flex;
     align-items: center;
-    gap: clamp(1rem, 2vw, 2rem);
-    font-size: 0.9rem;
-    font-weight: 700;
+    gap: 2rem;
+    margin-left: auto;
   }
-
   .desktop-nav a {
-    min-height: 2.75rem;
     display: inline-flex;
     align-items: center;
+    min-height: 44px;
+    font-size: 0.875rem;
     text-decoration: none;
   }
-
-  .desktop-nav a:not(.header-cta):hover {
+  .desktop-nav a:hover {
     color: var(--color-brand);
+    text-decoration: underline;
   }
-
-  .header-cta {
-    padding-inline: 1rem;
-    border-radius: 4px;
-    color: var(--color-ink);
-    background: var(--color-action);
-  }
-
-  .header-cta:hover {
-    background: var(--color-action-hover);
-  }
-
   .mobile-nav {
     display: none;
   }
-
-  @media (max-width: 51rem) {
+  .header-cta {
+    font-size: 0.875rem;
+  }
+  @media (max-width: 900px) {
+    .site-header {
+      gap: 1rem;
+    }
     .desktop-nav {
       display: none;
     }
-
+    .header-cta {
+      margin-left: auto;
+    }
     .mobile-nav {
-      position: relative;
       display: block;
     }
-
     .mobile-nav summary {
-      min-width: 4rem;
-      min-height: 2.75rem;
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      justify-content: center;
-      border: 1px solid var(--color-brand);
-      border-radius: 4px;
-      color: var(--color-brand);
+      min-height: 48px;
       cursor: pointer;
-      font-weight: 700;
       list-style: none;
+      border-bottom: 1px solid var(--color-ink);
     }
-
     .mobile-nav summary::-webkit-details-marker {
       display: none;
     }
-
     .mobile-nav nav {
       position: absolute;
-      top: calc(100% + 0.75rem);
+      top: 100%;
+      left: 0;
       right: 0;
-      width: min(18rem, calc(100vw - 2.5rem));
       display: grid;
-      padding: 0.75rem;
+      background: var(--color-canvas);
       border: 1px solid var(--color-line);
-      background: white;
-      box-shadow: 0 16px 48px rgba(18, 18, 18, 0.1);
+      padding: 1rem;
     }
-
     .mobile-nav nav a {
-      min-height: 3rem;
-      display: flex;
-      align-items: center;
-      padding-inline: 0.75rem;
+      padding: 0.75rem;
+      min-height: 48px;
       text-decoration: none;
-      font-weight: 700;
     }
-
     .mobile-nav nav a:hover {
-      color: var(--color-brand);
       background: var(--color-surface);
+    }
+  }
+  @media (max-width: 430px) {
+    .header-cta {
+      padding: 0.75rem;
+      font-size: 0.8125rem;
+      gap: 0.5rem;
+    }
+    .site-header {
+      gap: 0.75rem;
     }
   }
 </style>

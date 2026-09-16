@@ -17,9 +17,10 @@ export interface ProcessStep {
 export const contact = {
   phoneDisplay: "0923 179 169",
   phoneHref: "tel:+84923179169",
+  secondaryPhoneDisplay: "0988 425 263",
+  secondaryPhoneHref: "tel:+84988425263",
   address: "168C Xô Viết Nghệ Tĩnh, Phường Ninh Kiều, Thành phố Cần Thơ",
-  mapHref:
-    "https://www.google.com/maps/search/?api=1&query=168C+Xo+Viet+Nghe+Tinh+Ninh+Kieu+Can+Tho",
+  mapHref: "https://maps.app.goo.gl/B5KLqwL42T8q4hr8A",
   facebookHref: "https://facebook.com/BepAm.LecmaxCanTho",
   openingHours: "Mở cửa 7 ngày/tuần, đến 19:00 mỗi ngày",
 } as const;
@@ -97,14 +98,17 @@ export const processSteps: readonly ProcessStep[] = [
 export const selectionStandards = [
   {
     title: "Chất lượng rõ ràng",
-    description: "Ưu tiên vật liệu, cấu tạo và thông tin sản phẩm có thể giải thích cụ thể.",
+    description:
+      "Ưu tiên vật liệu, cấu tạo và thông tin sản phẩm có thể giải thích cụ thể.",
   },
   {
     title: "Vận hành đồng bộ",
-    description: "Mỗi thành phần phải phù hợp với hệ tủ, không gian và thao tác của gia đình.",
+    description:
+      "Mỗi thành phần phải phù hợp với hệ tủ, không gian và thao tác của gia đình.",
   },
   {
     title: "Giá trị dài hạn",
-    description: "Lựa chọn dựa trên độ bền, khả năng sử dụng và trách nhiệm sau khi hoàn thiện.",
+    description:
+      "Lựa chọn dựa trên độ bền, khả năng sử dụng và trách nhiệm sau khi hoàn thiện.",
   },
 ] as const;

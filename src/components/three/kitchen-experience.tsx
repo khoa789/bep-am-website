@@ -1,5 +1,11 @@
 import { Canvas } from "@react-three/fiber";
-import { Component, type ErrorInfo, type ReactNode, useEffect, useState } from "react";
+import {
+  Component,
+  type ErrorInfo,
+  type ReactNode,
+  useEffect,
+  useState,
+} from "react";
 import { kitchenViews, type KitchenMode } from "../../data/kitchen-experience";
 import KitchenFallback from "./kitchen-fallback";
 import KitchenScene from "./kitchen-scene";
@@ -16,7 +22,10 @@ function supportsWebGL() {
   }
 }
 
-class CanvasBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+class CanvasBoundary extends Component<
+  { children: ReactNode },
+  { failed: boolean }
+> {
   state = { failed: false };
 
   static getDerivedStateFromError() {
@@ -28,32 +37,57 @@ class CanvasBoundary extends Component<{ children: ReactNode }, { failed: boolea
   }
 
   render() {
-    return this.state.failed ? <KitchenFallback reason="Không thể mở mô hình 3D trên thiết bị này" /> : this.props.children;
+    return this.state.failed ? (
+      <KitchenFallback reason="Không thể mở mô hình 3D trên thiết bị này" />
+    ) : (
+      this.props.children
+    );
   }
 }
 
 export default function KitchenExperience() {
   const [mode, setMode] = useState<KitchenMode>("complete");
-  const [capability, setCapability] = useState<"checking" | "ready" | "fallback">("checking");
-  const activeView = kitchenViews.find((view) => view.id === mode) ?? kitchenViews[0];
+  const [capability, setCapability] = useState<
+    "checking" | "ready" | "fallback"
+  >("checking");
+  const activeView =
+    kitchenViews.find((view) => view.id === mode) ?? kitchenViews[0];
 
   useEffect(() => {
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     setCapability(supportsWebGL() && !reduceMotion ? "ready" : "fallback");
   }, []);
 
   return (
     <div className="kitchen-experience">
-      <div className="kitchen-canvas-wrap" role="img" aria-label="Mô hình minh họa hệ tủ Lecmax">
+      <div
+        className="kitchen-canvas-wrap"
+        role="img"
+        aria-label="Mô hình minh họa hệ tủ Lecmax"
+      >
         {capability === "ready" ? (
           <CanvasBoundary>
             <Canvas
               frameloop="demand"
               dpr={[1, 1.5]}
-              camera={{ position: [5.2, 3.7, 7.2], fov: 35, near: 0.1, far: 40 }}
-              gl={{ antialias: true, alpha: false, powerPreference: "high-performance" }}
-              fallback={<KitchenFallback reason="Không thể mở mô hình 3D trên thiết bị này" />}
-              onCreated={({ gl }) => {
+              camera={{
+                position: [5.2, 3.7, -7.2],
+                fov: 35,
+                near: 0.1,
+                far: 40,
+              }}
+              gl={{
+                antialias: true,
+                alpha: false,
+                powerPreference: "high-performance",
+              }}
+              fallback={
+                <KitchenFallback reason="Không thể mở mô hình 3D trên thiết bị này" />
+              }
+              onCreated={({ gl, camera }) => {
+                camera.lookAt(0, 1.15, 0);
                 gl.domElement.addEventListener(
                   "webglcontextlost",
                   (event) => {
@@ -68,11 +102,21 @@ export default function KitchenExperience() {
             </Canvas>
           </CanvasBoundary>
         ) : (
-          <KitchenFallback reason={capability === "checking" ? "Bản xem tĩnh" : "Chế độ tĩnh phù hợp với thiết bị của bạn"} />
+          <KitchenFallback
+            reason={
+              capability === "checking"
+                ? "Bản xem tĩnh"
+                : "Chế độ tĩnh phù hợp với thiết bị của bạn"
+            }
+          />
         )}
       </div>
 
-      <div className="kitchen-controls" role="group" aria-label="Chọn góc giải thích mô hình">
+      <div
+        className="kitchen-controls"
+        role="group"
+        aria-label="Chọn góc giải thích mô hình"
+      >
         {kitchenViews.map((view) => (
           <button
             type="button"

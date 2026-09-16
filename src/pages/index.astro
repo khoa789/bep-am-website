@@ -1,21 +1,19 @@
 ---
 import BaseLayout from "../layouts/base-layout.astro";
+import SiteHeader from "../components/site-header.astro";
 import KitchenStory from "../components/kitchen-story.astro";
 import ShowroomCta from "../components/showroom-cta.astro";
-import SiteHeader from "../components/site-header.astro";
-import SolutionEcosystem from "../components/solution-ecosystem.astro";
-import { contact, processSteps, selectionStandards } from "../data/site-content";
+import { contact, processSteps, solutionLayers } from "../data/site-content";
 import "../styles/home.css";
-
 const title = "Bếp Ấm | Giải pháp không gian bếp trọn gói tại Cần Thơ";
 const description =
-  "Bếp Ấm tuyển chọn và kết nối hệ tủ Lecmax, đá Vicostone, thiết bị Panasonic, chậu vòi Konox thành giải pháp không gian bếp trọn gói tại Cần Thơ.";
+  "Cùng Bếp Ấm tìm giải pháp bếp phù hợp với gia đình: hệ tủ Lecmax, mặt đá, thiết bị và chậu vòi đồng bộ. Đặt lịch tư vấn tại showroom Cần Thơ.";
 const localBusiness = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   name: "Bếp Ấm",
   description,
-  telephone: "+84923179169",
+  telephone: [contact.phoneHref.slice(4), contact.secondaryPhoneHref.slice(4)],
   address: {
     "@type": "PostalAddress",
     streetAddress: "168C Xô Viết Nghệ Tĩnh",
@@ -24,171 +22,283 @@ const localBusiness = {
     addressCountry: "VN",
   },
   sameAs: [contact.facebookHref],
+  hasMap: contact.mapHref,
 };
 ---
 
-<BaseLayout title={title} description={description}>
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify(localBusiness)} is:inline />
+<BaseLayout
+  title={title}
+  description={description}
+  image="/images/kitchen-warm-1600.webp"
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(localBusiness)}
+    is:inline
+  ></script>
+  <link
+    slot="head"
+    rel="preload"
+    href="/fonts/newsreader-regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
   <SiteHeader />
-
   <main id="noi-dung-chinh">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="container hero-grid">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-intro">
         <div class="hero-copy">
-          <p class="eyebrow">Bếp Ấm · Giải pháp bếp trọn gói</p>
-          <h1 class="display-title" id="hero-title">Một nơi,<br />trọn vẹn gian bếp.</h1>
-          <p class="hero-lede">
-            Từ hệ tủ, mặt đá, thiết bị đến chậu vòi, Bếp Ấm chọn từng thương hiệu bằng
-            cùng một tiêu chuẩn để gia đình an tâm từ lúc cân nhắc đến khi sử dụng.
+          <p class="eyebrow">Showroom giải pháp bếp · Cần Thơ</p>
+          <h1 id="hero-title">
+            Một nơi,
+            <br />
+            <em>trọn vẹn gian bếp.</em>
+          </h1>
+          <p class="lede">
+            Từ hệ tủ đến mặt đá, thiết bị và chậu vòi. Bếp Ấm kết nối từng lựa
+            chọn cho căn bếp của gia đình bạn.
           </p>
-          <div class="hero-actions">
-            <a class="button button--primary" href="#showroom">Ghé showroom trải nghiệm</a>
-            <a class="button button--secondary" href={contact.phoneHref}>
-              Gọi {contact.phoneDisplay}
+          <div class="actions">
+            <a class="button button--primary" href="#tu-van">
+              Đặt lịch tư vấn <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#cong-trinh">
+              Khám phá không gian bếp <span aria-hidden="true">↓</span>
             </a>
           </div>
-          <p class="hero-note">Tư vấn trực tiếp · Xem vật liệu thật · Thử thao tác tại showroom</p>
         </div>
-
-        <div class="kitchen-study" role="img" aria-label="Minh họa kỹ thuật một không gian bếp ấm với hệ tủ, mặt đá, thiết bị và vùng chậu">
-          <div class="study-label">Một hệ thống đồng bộ</div>
-          <div class="study-wall" aria-hidden="true">
-            <span class="study-cabinet study-cabinet--one"></span>
-            <span class="study-cabinet study-cabinet--two"></span>
-            <span class="study-cabinet study-cabinet--three"></span>
-            <span class="study-hood"></span>
-            <span class="study-counter"></span>
-            <span class="study-sink"></span>
-            <span class="study-faucet"></span>
-            <span class="study-base study-base--one"></span>
-            <span class="study-base study-base--two"></span>
-            <span class="study-appliance"></span>
-            <span class="study-island"></span>
-          </div>
-          <div class="study-index" aria-hidden="true">01—04</div>
-          <p class="study-caption">Minh họa không gian · Không phải thiết kế cho một công trình cụ thể</p>
-        </div>
+        <aside class="hero-aside" aria-label="Thông tin showroom">
+          <p>
+            Một đầu mối
+            <br />
+            <strong>Tư vấn, thiết kế và thi công</strong>
+          </p>
+          <p>
+            Tại showroom
+            <br />
+            <strong>Xem vật liệu. Thử thao tác.</strong>
+          </p>
+          <p>
+            168C Xô Viết Nghệ Tĩnh
+            <br />
+            <strong>Ninh Kiều, Cần Thơ</strong>
+          </p>
+        </aside>
       </div>
+      <figure>
+        <img
+          class="hero-image"
+          src="/images/kitchen-warm-1600.webp"
+          srcset="/images/kitchen-warm-800.webp 800w, /images/kitchen-warm-1600.webp 1600w"
+          sizes="(max-width: 1280px) 100vw, 1200px"
+          width="1600"
+          height="1067"
+          alt="Căn bếp Lecmax tông nâu ấm mở liền với bàn ăn, ánh sáng chiếu dọc mặt bếp"
+          fetchpriority="high"
+        />
+        <figcaption class="caption">
+          <span>Không gian sống, bắt đầu từ căn bếp.</span>
+          <span>Ảnh công trình tham khảo do Lecmax cung cấp.</span>
+        </figcaption>
+      </figure>
     </section>
-
-    <section class="section promise" aria-labelledby="promise-title">
-      <div class="container promise-grid">
-        <p class="promise-index" aria-hidden="true">01</p>
+    <section
+      class="section container"
+      id="cong-trinh"
+      aria-labelledby="projects-title"
+    >
+      <div class="section-intro">
+        <p class="section-label">Không gian & cảm hứng</p>
         <div>
-          <p class="eyebrow">Sự an tâm bắt đầu từ lựa chọn</p>
-          <h2 id="promise-title">Bạn không cần trở thành chuyên gia để làm được một căn bếp tốt.</h2>
-        </div>
-        <div class="promise-copy">
-          <p>
-            Bếp Ấm nhận phần khó về mình: tìm hiểu cấu tạo, đối chiếu công năng, phối hợp
-            kích thước và kết nối các đơn vị trong cùng một phương án.
-          </p>
-          <p>
-            Mỗi thương hiệu được chọn vì một vai trò rõ ràng. Khi ghép lại, chúng cần phục
-            vụ cùng một điều — nhịp sống thật của gia đình bạn.
+          <h2 id="projects-title">
+            Mỗi nếp sống,
+            <br />
+            <em>một cách làm bếp.</em>
+          </h2>
+          <p class="lede">
+            Một căn bếp đẹp còn cần vừa vặn với cách gia đình nấu nướng, cất giữ
+            và quây quần.
           </p>
         </div>
       </div>
-    </section>
-
-    <SolutionEcosystem />
-
-    <KitchenStory />
-
-    <section class="section system-story" aria-labelledby="system-title">
-      <div class="container system-heading">
-        <p class="eyebrow">Một căn bếp vận hành như một hệ thống</p>
-        <h2 id="system-title">Đẹp ở từng phần. Thuận tiện khi dùng cùng nhau.</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img
+            src="/images/kitchen-warm-800.webp"
+            width="800"
+            height="533"
+            loading="lazy"
+            alt="Hệ bếp màu nâu nhũ với tủ cao và bàn ăn liền kề trong thư viện Lecmax"
+          />
+          <p class="project-meta">Công trình Lecmax · Hà Nội</p>
+          <h3>Sắc ấm nối liền bàn ăn</h3>
+          <p>
+            Hệ tủ cao và bề mặt cùng tông tạo sự liền mạch giữa nơi nấu nướng và
+            không gian sum họp.
+          </p>
+          <details>
+            <summary>Đọc thêm về không gian</summary>
+            <p>
+              Ảnh từ bộ công trình chị Ngà trong thư viện Lecmax. Hồ sơ của hãng
+              mô tả hệ tủ inox 304, cánh kính và các nhóm lưu trữ tích hợp. Đây
+              là công trình tham khảo của Lecmax, không phải hồ sơ thi công do
+              Bếp Ấm thực hiện.
+            </p>
+            <a href="#tu-van">Trao đổi về căn bếp của bạn ↗</a>
+          </details>
+        </article>
+        <article class="project-card">
+          <img
+            src="/images/kitchen-light-800.webp"
+            width="800"
+            height="450"
+            loading="lazy"
+            alt="Căn bếp sáng màu Lecmax với hệ tủ chữ L, mặt đá sáng và thiết bị âm tủ"
+          />
+          <p class="project-meta">Công trình Lecmax · Hà Đông</p>
+          <h3>Nhẹ nhàng trong từng thao tác</h3>
+          <p>
+            Tông sáng mở rộng cảm giác không gian. Các vùng thao tác được kết
+            nối bằng mặt bếp và hệ lưu trữ.
+          </p>
+          <details>
+            <summary>Đọc thêm về không gian</summary>
+            <p>
+              Ảnh từ bộ công trình anh Tú tại Hà Đông trong thư viện Lecmax.
+              Nguồn hãng giới thiệu tông trắng, kem và phụ kiện giảm chấn. Bố
+              trí của mỗi gia đình sẽ được khảo sát, tư vấn riêng.
+            </p>
+            <a href="#tu-van">Trao đổi về căn bếp của bạn ↗</a>
+          </details>
+        </article>
       </div>
-      <div class="container system-map" aria-label="Mối liên kết giữa bốn lớp giải pháp">
-        <article>
-          <p class="system-number">01</p>
-          <h3>Hệ tủ tạo nền</h3>
-          <p>Khoang lưu trữ, thiết bị và đường kỹ thuật được tính từ cấu trúc chung.</p>
-        </article>
-        <article>
-          <p class="system-number">02</p>
-          <h3>Mặt đá nối thao tác</h3>
-          <p>Các vùng chuẩn bị, nấu và vệ sinh liên tục, vừa tầm với người sử dụng.</p>
-        </article>
-        <article>
-          <p class="system-number">03</p>
-          <h3>Thiết bị vào đúng chỗ</h3>
-          <p>Kích thước và luồng sử dụng được cân nhắc trước khi hoàn thiện hệ tủ.</p>
-        </article>
-        <article>
-          <p class="system-number">04</p>
-          <h3>Vùng nước khép vòng</h3>
-          <p>Chậu, vòi, mặt đá và khoang dưới chậu được phối hợp thành một cụm sử dụng.</p>
-        </article>
-      </div>
+      <p class="source-note">
+        Các hình trên thuộc thư viện công trình Lecmax, dùng để tham khảo cách
+        bố trí và phối vật liệu.
+      </p>
     </section>
-
-    <section class="section standards" aria-labelledby="standards-title">
-      <div class="container standards-grid">
-        <div class="standards-heading">
-          <p class="eyebrow">Tiêu chuẩn tuyển chọn</p>
-          <h2 id="standards-title">Không chọn nhiều.<br />Chọn có lý do.</h2>
+    <section
+      class="section container"
+      id="giai-phap"
+      aria-labelledby="solutions-title"
+    >
+      <div class="section-intro">
+        <p class="section-label">Giải pháp trọn gói</p>
+        <div>
+          <h2 id="solutions-title">
+            Đẹp ở từng phần.
+            <br />
+            <em>Đồng bộ khi sử dụng.</em>
+          </h2>
+          <p class="lede">
+            Bếp Ấm tính đến những điểm giao nhau giữa hệ tủ, mặt đá, thiết bị và
+            vùng nước ngay từ phương án đầu tiên.
+          </p>
         </div>
-        <div class="standards-list">
-          {
-            selectionStandards.map((standard, index) => (
-              <article>
-                <p class="standard-number">0{index + 1}</p>
-                <div>
-                  <h3>{standard.title}</h3>
-                  <p>{standard.description}</p>
-                </div>
-              </article>
-            ))
-          }
-        </div>
       </div>
+      <div class="solution-list">
+        {solutionLayers.map((layer) => (
+          <article class="solution-item">
+            <p class="brand-name">{layer.brand}</p>
+            <h3>{layer.role}</h3>
+            <p>{layer.summary}</p>
+          </article>
+        ))}
+      </div>
+      <p class="source-note">
+        Hệ tủ Lecmax là nền tảng của giải pháp. Panasonic, Konox và Vicostone là
+        lựa chọn tiêu chuẩn khi bạn chưa chọn riêng thiết bị, chậu vòi hoặc mặt
+        đá.
+      </p>
     </section>
-
-    <section class="section process" id="quy-trinh" aria-labelledby="process-title">
-      <div class="container process-heading">
-        <p class="eyebrow">Một đầu mối xuyên suốt</p>
-        <h2 id="process-title">Từ điều gia đình cần đến căn bếp sử dụng mỗi ngày.</h2>
-        <p class="lede">
-          Quy trình giúp từng lựa chọn được đặt đúng ngữ cảnh, thay vì để khách hàng tự xử
-          lý những điểm giao nhau giữa nhiều hạng mục.
+    <section
+      class="section container material-story"
+      aria-labelledby="materials-title"
+    >
+      <figure>
+        <img
+          src="/images/drawer-detail-800.webp"
+          width="800"
+          height="533"
+          loading="lazy"
+          alt="Chi tiết ngăn kéo inox với các khay chia dụng cụ trong hệ tủ Lecmax"
+        />
+        <figcaption class="caption">
+          <span>Chi tiết lưu trữ · Ảnh thư viện Lecmax.</span>
+        </figcaption>
+      </figure>
+      <div class="material-copy">
+        <p class="section-label">Vật liệu & chi tiết</p>
+        <h2 id="materials-title">
+          Chất lượng nằm ở<br />
+          <em>điều dùng mỗi ngày.</em>
+        </h2>
+        <p>
+          Ở bề mặt dễ lau. Ở ngăn kéo vừa tay. Ở những mối nối được tính cùng
+          nhau trước khi lắp đặt.
         </p>
+        <ul class="material-points">
+          <li>
+            <strong>Hệ tủ inox 304</strong>
+            <span>Cấu tạo module, hai mặt inox và lõi nhôm tổ ong.</span>
+          </li>
+          <li>
+            <strong>Bề mặt & thiết bị</strong>
+            <span>
+              Chọn theo thói quen sử dụng, bố trí theo mặt bằng thực tế.
+            </span>
+          </li>
+          <li>
+            <strong>Chi tiết lưu trữ</strong>
+            <span>Thử trực tiếp để biết điều gì thuận tay với mình.</span>
+          </li>
+        </ul>
       </div>
-      <ol class="container process-list">
-        {
-          processSteps.map((step) => (
-            <li>
-              <p class="process-number">{step.order}</p>
-              <h3>{step.title}</h3>
-              <p>{step.description}</p>
-            </li>
-          ))
-        }
+    </section>
+    <KitchenStory />
+    <section
+      class="section container"
+      id="quy-trinh"
+      aria-labelledby="process-title"
+    >
+      <div class="section-intro">
+        <p class="section-label">Cùng bạn, từ đầu đến cuối</p>
+        <div>
+          <h2 id="process-title">
+            Bắt đầu bằng
+            <br />
+            <em>một cuộc trò chuyện.</em>
+          </h2>
+          <p class="lede">
+            Một đầu mối xuyên suốt, để bạn hiểu từng lựa chọn trước khi quyết
+            định.
+          </p>
+        </div>
+      </div>
+      <ol class="process-list">
+        {processSteps.map((step) => (
+          <li>
+            <p class="process-number">{step.order}</p>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+          </li>
+        ))}
       </ol>
     </section>
-
     <ShowroomCta />
   </main>
-
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <img src="/brand/bep-am-logo.png" width="886" height="822" alt="Bếp Ấm - Bếp ấm, Nhà êm" />
-        <p>Giải pháp không gian bếp trọn gói tại Cần Thơ.</p>
+        <p>Bếp ấm, Nhà êm.</p>
+        <p>© {new Date().getFullYear()} Bếp Ấm · Giải pháp bếp tại Cần Thơ</p>
       </div>
-      <div>
-        <p class="footer-label">Liên hệ</p>
-        <a href={contact.phoneHref}>{contact.phoneDisplay}</a>
-        <p>{contact.address}</p>
-      </div>
-      <div>
-        <p class="footer-label">Khám phá</p>
-        <a href="#giai-phap">Bốn lớp giải pháp</a>
-        <a href="#ben-trong-lecmax">Bên trong Lecmax</a>
-        <a href="#quy-trinh">Quy trình đồng hành</a>
-      </div>
-      <p class="footer-copyright">© {new Date().getFullYear()} Bếp Ấm.</p>
+      <a href={contact.facebookHref} target="_blank" rel="noreferrer">
+        Facebook Bếp Ấm ↗
+      </a>
+      <a href="#showroom">Ghé showroom trải nghiệm ↗</a>
     </div>
   </footer>
 </BaseLayout>
