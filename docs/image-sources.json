@@ -47,5 +47,91 @@
     "source": "https://drive.google.com/file/d/13-AiGQBGl5vgQBcHNwLxaeYMlJnK54pN/view?usp=drivesdk",
     "credit": "Kho ảnh Google Drive do Bếp Ấm cung cấp",
     "classification": "Ảnh showroom Bếp Ấm; không gắn với công trình khách hàng"
+  },
+  {
+    "file": "lecmax-factory",
+    "sourceFile": "DJI_0084 - fix logo.jpg",
+    "sourceCollection": "Lecmax_Photos Library/Nhà máy",
+    "credit": "Thư viện Lecmax do người dùng cung cấp",
+    "classification": "Ảnh tư liệu Lecmax"
+  },
+  {
+    "file": "lecmax-machinery",
+    "sourceFile": "VT_01086.jpg",
+    "sourceCollection": "Lecmax_Photos Library/Nhà máy",
+    "credit": "Thư viện Lecmax do người dùng cung cấp",
+    "classification": "Ảnh tư liệu Lecmax"
+  },
+  {
+    "file": "lecmax-production",
+    "sourceFile": "VT_01121.jpg",
+    "sourceCollection": "Lecmax_Photos Library/Nhà máy",
+    "credit": "Thư viện Lecmax do người dùng cung cấp",
+    "classification": "Ảnh tư liệu Lecmax"
+  },
+  {
+    "file": "lecmax-drawer",
+    "sourceFile": "17.jpg",
+    "sourceCollection": "Lecmax_Photos Library/Sản phẩm/Showroom Hà Nội",
+    "credit": "Thư viện Lecmax do người dùng cung cấp",
+    "classification": "Ảnh tư liệu Lecmax"
+  },
+  {
+    "file": "lecmax-pantry",
+    "sourceFile": "16.jpg",
+    "sourceCollection": "Lecmax_Photos Library/Sản phẩm/Showroom Hà Nội",
+    "credit": "Thư viện Lecmax do người dùng cung cấp",
+    "classification": "Ảnh tư liệu Lecmax"
+  },
+  {
+    "file": "lecmax-lift",
+    "sourceFile": "5.png",
+    "sourceCollection": "Lecmax_Photos Library/Sản phẩm/Showroom Hà Nội",
+    "credit": "Thư viện Lecmax do người dùng cung cấp",
+    "classification": "Ảnh tư liệu Lecmax"
+  },
+  {
+    "file": "showroom-conversation",
+    "sourceFile": "IMG_6166.HEIC",
+    "source": "https://drive.google.com/file/d/1HqgHXqlQte05dFFvqg3qfkVHlvK91B9W/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive của Bếp Ấm",
+    "classification": "Ảnh buổi trao đổi thực tế; không khẳng định là workshop được lên lịch"
+  },
+  {
+    "file": "showroom-gathering",
+    "sourceFile": "IMG_6571.HEIC",
+    "source": "https://drive.google.com/file/d/1wxB7cJknuclzPw9wS4qIH0R8zCI9ohRV/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive của Bếp Ấm",
+    "classification": "Ảnh buổi trao đổi thực tế; không khẳng định là workshop được lên lịch"
+  },
+  {
+    "file": "kitchen-concept-1",
+    "source": "ChatGPT built-in image generation",
+    "prompt": "docs/generated-image-prompts.md",
+    "classification": "Phối cảnh ý tưởng AI, không phải công trình thực tế"
+  },
+  {
+    "file": "kitchen-concept-2",
+    "source": "ChatGPT built-in image generation",
+    "prompt": "docs/generated-image-prompts.md",
+    "classification": "Phối cảnh ý tưởng AI, không phải công trình thực tế"
+  },
+  {
+    "file": "kitchen-concept-3",
+    "source": "ChatGPT built-in image generation",
+    "prompt": "docs/generated-image-prompts.md",
+    "classification": "Phối cảnh ý tưởng AI, không phải công trình thực tế"
+  },
+  {
+    "file": "kitchen-concept-4",
+    "source": "ChatGPT built-in image generation",
+    "prompt": "docs/generated-image-prompts.md",
+    "classification": "Phối cảnh ý tưởng AI, không phải công trình thực tế"
+  },
+  {
+    "file": "kitchen-concept-5",
+    "source": "ChatGPT built-in image generation",
+    "prompt": "docs/generated-image-prompts.md",
+    "classification": "Phối cảnh ý tưởng AI, không phải công trình thực tế"
   }
 ]

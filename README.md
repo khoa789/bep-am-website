@@ -50,7 +50,7 @@ domain, đặt `PUBLIC_SITE_URL=https://ten-mien-moi.vn` tại lúc build để 
 ## Nguồn thiết kế
 
 - `DESIGN.md`: hướng trang chủ “Hồ sơ một gian bếp ấm” được duyệt ngày 16/09/2026.
-- `docs/image-sources.json`: nguồn ảnh showroom Bếp Ấm từ kho Google Drive do chủ thương hiệu cung cấp.
+- `docs/image-sources.json`: nguồn ảnh showroom Bếp Ấm, nhà máy/phụ kiện Lecmax và phối cảnh AI.
 - Đặt lịch tư vấn hiện qua điện thoại, không có API nhận lịch.
 
 - `design-system/MASTER.md`: hệ màu, typography, motion, accessibility và hành trình nội dung đã duyệt.
@@ -61,3 +61,7 @@ domain, đặt `PUBLIC_SITE_URL=https://ten-mien-moi.vn` tại lúc build để 
 
 Source được build tĩnh và deploy lên Cloudflare Workers Static Assets. Thay DNS, thêm custom
 domain hoặc cấu hình secrets vẫn cần xác nhận riêng.
+
+## Bộ sưu tập và kiến thức
+
+Thêm nội dung vào `src/data/editorial-content.ts` để sinh trang bộ sưu tập hoặc bài kiến thức theo slug. Năm phối cảnh đầu trang được tạo bằng ChatGPT; prompt lưu trong `docs/generated-image-prompts.md`. Video showroom và nguồn gốc lưu trong `docs/video-sources.json`. Không có CMS hoặc hệ thống đăng ký workshop; lịch hoạt động dẫn tới Facebook chính thức.

@@ -21,7 +21,7 @@ The reference is an invented Inspo example, not a verified business. Learn compo
 
 ## Homepage sequence
 
-1. Short promise, consultation CTA, secondary showroom link, large captioned showroom photograph.
+1. Short promise, consultation CTA and five AI kitchen concepts in a two-second carousel with pause, manual controls, offscreen/tab suspension and reduced-motion support.
 2. Real Bếp Ấm showroom photography from the user-supplied Drive folder. Explain the kitchen and appliance areas without claiming customer projects.
 3. Four coordinated solution roles: Lecmax cabinetry; Panasonic appliances, Konox sinks/taps and Vicostone surfaces as defaults when the customer has not chosen their own.
 4. Material details, a three-image gallery of samples/sinks/entrance and the existing optional 3D explanatory module.
@@ -30,7 +30,7 @@ The reference is an invented Inspo example, not a verified business. Learn compo
 
 ## Content and asset boundaries
 
-Use only showroom photos from the user-supplied Google Drive folder 1RWclrVD-zdP6VftR7WF35TXrCnamGBOU, replacing the earlier manufacturer reference photography. Record each selected original filename and Drive URL in docs/image-sources.json. Publish optimized WebP variants without original location metadata. No invented testimonials, counters, customer-project claims or unverified warranties. The knowledge library provides technical context, not manufacturing approval. Official Facebook supplied by the user: https://www.facebook.com/bepamcantho.
+Use showroom photos/videos from the supplied Drive folder 1RWclrVD-zdP6VftR7WF35TXrCnamGBOU and authentic factory/accessory images from the supplied Lecmax folders. The user subsequently requested five ChatGPT-generated kitchen concepts for the hero, informed by the supplied Lecmax render folder. Label them as AI concepts; never present them as completed work. Record each selected original filename and Drive URL in docs/image-sources.json. Publish optimized WebP variants without original location metadata. No invented testimonials, counters, customer-project claims or unverified warranties. The knowledge library provides technical context, not manufacturing approval. Official Facebook supplied by the user: https://www.facebook.com/bepamcantho.
 
 The repository phone is 0923 179 169; Maps showed 0988 425 263 on 2026-09-16. The user approved keeping both numbers; show both as telephone links and include both in structured data. Appointments use an explicit telephone action; there is no backend booking service and no simulated success form. Keep the existing option to visit the showroom directly.
 
@@ -45,3 +45,7 @@ Work started from GitHub main 494a87d. On 2026-09-16 the user approved publishin
 ## Verification
 
 Run existing content tests, Astro checks and production build. Inspect desktop 1440px and mobile 375/390px, tablet and landscape widths; check Vietnamese, line wrapping, hierarchy, spacing, menu, consultation anchors, phone/maps targets, image loading, keyboard focus, overflow, 3D states and reduced motion. Record evidence and limitations in plans/reports/.
+
+## Editorial expansion
+
+Collections are static routes generated from src/data/editorial-content.ts: compact apartments, personal style/five-element color inspiration, and modern lifestyles. Three kitchen knowledge articles have their own routes. Future content can be added to those arrays; no CMS is implied. Workshop area links to verified Facebook announcements without inventing event dates. Include the two user-supplied YouTube embeds and optimized short showroom videos with manual playback. Source manifests distinguish generated, Lecmax and Bếp Ấm media.
