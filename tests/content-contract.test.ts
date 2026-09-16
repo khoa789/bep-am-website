@@ -16,6 +16,7 @@ describe("Bếp Ấm content contract", () => {
     expect(contact.secondaryPhoneHref).toBe("tel:+84988425263");
     expect(contact.address).toContain("168C Xô Viết Nghệ Tĩnh");
     expect(contact.openingHours).toContain("19:00");
+    expect(contact.facebookHref).toBe("https://www.facebook.com/bepamcantho");
   });
 
   it("keeps the core promise and showroom conversion in the homepage source", async () => {
