@@ -14,4 +14,4 @@ Inspected 22 HEIC photos; selected seven distinct showroom views. Produced eight
 - Existing Three.js bundle warning above 500 kB remains.
 - Chromium preview inspected at 1440px desktop and 390px mobile. Photos load and have upright orientation; Vietnamese copy and captions remain readable with no horizontal overflow.
 - Facebook link and Open Graph URL point to the newly approved sources. No old photo URLs or Facebook URL remain in application source.
-- No physical-device or Safari test. Live deployment verification follows publication.
+- No physical-device or Safari test. Live deployment 80232bc6-b4f7-4e50-b4d0-ac5577fa13f0 verified: all seven showroom photos load, official Facebook link correct, mobile width 390px has no overflow, old kitchen-warm-1600.webp returns 404.
