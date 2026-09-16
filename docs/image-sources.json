@@ -1,20 +1,51 @@
 [
   {
-    "file": "kitchen-warm",
-    "source": "Lecmax_Photos Library/project-references/z6569483559753_3bb0d8e169ee5998508b88500419436f.jpg",
-    "credit": "Thư viện ảnh Lecmax do người dùng cung cấp",
-    "classification": "Ảnh tham khảo của Lecmax, không xác nhận là công trình Bếp Ấm"
+    "file": "showroom-storage",
+    "sourceFile": "IMG_6828.HEIC",
+    "source": "https://drive.google.com/file/d/1-21y1wEJbrpB4G5ZRSLb0o8UJwKgGeIU/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive do Bếp Ấm cung cấp",
+    "classification": "Ảnh showroom Bếp Ấm; không gắn với công trình khách hàng"
   },
   {
-    "file": "kitchen-light",
-    "source": "Lecmax_Photos Library/project-references/vlcsnap-2025-05-30-08h36m22s553.png",
-    "credit": "Thư viện ảnh Lecmax do người dùng cung cấp",
-    "classification": "Ảnh tham khảo của Lecmax, không xác nhận là công trình Bếp Ấm"
+    "file": "showroom-materials",
+    "sourceFile": "IMG_6824.HEIC",
+    "source": "https://drive.google.com/file/d/17l7cy7dcdNTW6lOlccgfcHCCPYOx3p1C/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive do Bếp Ấm cung cấp",
+    "classification": "Ảnh showroom Bếp Ấm; không gắn với công trình khách hàng"
   },
   {
-    "file": "drawer-detail",
-    "source": "Lecmax_Photos Library/Showroom Ha Noi/17.jpg",
-    "credit": "Thư viện ảnh Lecmax do người dùng cung cấp",
-    "classification": "Ảnh tham khảo của Lecmax, không xác nhận là công trình Bếp Ấm"
+    "file": "showroom-sinks",
+    "sourceFile": "IMG_6822.HEIC",
+    "source": "https://drive.google.com/file/d/1c8LkgenEeJ-XZc8yYtGb12Frayx5nK47/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive do Bếp Ấm cung cấp",
+    "classification": "Ảnh showroom Bếp Ấm; không gắn với công trình khách hàng"
+  },
+  {
+    "file": "showroom-entrance",
+    "sourceFile": "IMG_6819.HEIC",
+    "source": "https://drive.google.com/file/d/1Ekl4HhpFqnx-9YpxEBKOkAMxw2kdxsjK/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive do Bếp Ấm cung cấp",
+    "classification": "Ảnh showroom Bếp Ấm; không gắn với công trình khách hàng"
+  },
+  {
+    "file": "showroom-appliances",
+    "sourceFile": "IMG_6815.HEIC",
+    "source": "https://drive.google.com/file/d/1xz1g5gUlaWF0XtCvVJN7_mrv_iX-9eB2/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive do Bếp Ấm cung cấp",
+    "classification": "Ảnh showroom Bếp Ấm; không gắn với công trình khách hàng"
+  },
+  {
+    "file": "showroom-kitchen",
+    "sourceFile": "IMG_6812.HEIC",
+    "source": "https://drive.google.com/file/d/1yicP79pAcy6bXPmDmDhQVzOvFFCxqNj0/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive do Bếp Ấm cung cấp",
+    "classification": "Ảnh showroom Bếp Ấm; không gắn với công trình khách hàng"
+  },
+  {
+    "file": "showroom-overview",
+    "sourceFile": "IMG_6808.HEIC",
+    "source": "https://drive.google.com/file/d/13-AiGQBGl5vgQBcHNwLxaeYMlJnK54pN/view?usp=drivesdk",
+    "credit": "Kho ảnh Google Drive do Bếp Ấm cung cấp",
+    "classification": "Ảnh showroom Bếp Ấm; không gắn với công trình khách hàng"
   }
 ]

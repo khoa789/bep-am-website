@@ -50,7 +50,7 @@ domain, đặt `PUBLIC_SITE_URL=https://ten-mien-moi.vn` tại lúc build để 
 ## Nguồn thiết kế
 
 - `DESIGN.md`: hướng trang chủ “Hồ sơ một gian bếp ấm” được duyệt ngày 16/09/2026.
-- `docs/image-sources.json`: nguồn ảnh Lecmax; ảnh tham khảo không đại diện công trình Bếp Ấm.
+- `docs/image-sources.json`: nguồn ảnh showroom Bếp Ấm từ kho Google Drive do chủ thương hiệu cung cấp.
 - Đặt lịch tư vấn hiện qua điện thoại, không có API nhận lịch.
 
 - `design-system/MASTER.md`: hệ màu, typography, motion, accessibility và hành trình nội dung đã duyệt.

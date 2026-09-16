@@ -21,16 +21,16 @@ The reference is an invented Inspo example, not a verified business. Learn compo
 
 ## Homepage sequence
 
-1. Short promise, consultation CTA, secondary work link, large captioned kitchen photograph.
-2. Real supplied Lecmax project references, identified as manufacturer references rather than Bếp Ấm's completed work. Expandable additional photographs and sourced descriptions.
+1. Short promise, consultation CTA, secondary showroom link, large captioned showroom photograph.
+2. Real Bếp Ấm showroom photography from the user-supplied Drive folder. Explain the kitchen and appliance areas without claiming customer projects.
 3. Four coordinated solution roles: Lecmax cabinetry; Panasonic appliances, Konox sinks/taps and Vicostone surfaces as defaults when the customer has not chosen their own.
-4. Material details and the existing optional 3D explanatory module.
+4. Material details, a three-image gallery of samples/sinks/entrance and the existing optional 3D explanatory module.
 5. Existing four-step consultation and delivery process.
 6. Showroom invitation, telephone appointment and exact supplied Maps destination.
 
 ## Content and asset boundaries
 
-Use the user's local Lecmax library, not images from reference websites. Record each selection in docs/image-sources.json. No invented testimonials, counters, local completed projects or unverified warranties. Completed Bếp Ấm project photography has not been supplied/verified; do not relabel manufacturer photography. The knowledge library provides technical context, not manufacturing approval.
+Use only showroom photos from the user-supplied Google Drive folder 1RWclrVD-zdP6VftR7WF35TXrCnamGBOU, replacing the earlier manufacturer reference photography. Record each selected original filename and Drive URL in docs/image-sources.json. Publish optimized WebP variants without original location metadata. No invented testimonials, counters, customer-project claims or unverified warranties. The knowledge library provides technical context, not manufacturing approval. Official Facebook supplied by the user: https://www.facebook.com/bepamcantho.
 
 The repository phone is 0923 179 169; Maps showed 0988 425 263 on 2026-09-16. The user approved keeping both numbers; show both as telephone links and include both in structured data. Appointments use an explicit telephone action; there is no backend booking service and no simulated success form. Keep the existing option to visit the showroom directly.
 
