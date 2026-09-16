@@ -24,10 +24,10 @@ Astro static output được phục vụ như static assets. Không tạo Worker
 
 ## Related Code Files
 
-- Create: `/Users/tadaka/Documents/BepAm_website/wrangler.jsonc`
-- Create: `/Users/tadaka/Documents/BepAm_website/tests/content-contract.test.ts`
-- Modify: `/Users/tadaka/Documents/BepAm_website/package.json`
-- Modify: `/Users/tadaka/Documents/BepAm_website/README.md`
+- Create: `wrangler.jsonc`
+- Create: `tests/content-contract.test.ts`
+- Modify: `package.json`
+- Modify: `README.md`
 - Modify: các file UI/3D khi QA phát hiện lỗi.
 
 ## Implementation Steps

@@ -24,11 +24,11 @@ Thêm một React island 3D minh họa kỹ thuật, giúp người xem hiểu c
 
 ## Related Code Files
 
-- Create: `/Users/tadaka/Documents/BepAm_website/src/components/three/kitchen-experience.tsx`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/components/three/kitchen-scene.tsx`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/components/three/kitchen-fallback.tsx`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/components/kitchen-story.astro`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/data/kitchen-hotspots.ts`
+- Create: `src/components/three/kitchen-experience.tsx`
+- Create: `src/components/three/kitchen-scene.tsx`
+- Create: `src/components/three/kitchen-fallback.tsx`
+- Create: `src/components/kitchen-story.astro`
+- Create: `src/data/kitchen-hotspots.ts`
 
 ## Implementation Steps
 

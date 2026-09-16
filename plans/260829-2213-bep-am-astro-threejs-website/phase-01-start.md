@@ -24,12 +24,12 @@ Astro static output. `BaseLayout.astro` sở hữu metadata và shell. CSS token
 
 ## Related Code Files
 
-- Create: `/Users/tadaka/Documents/BepAm_website/package.json`
-- Create: `/Users/tadaka/Documents/BepAm_website/astro.config.mjs`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/layouts/base-layout.astro`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/styles/global.css`
-- Create: `/Users/tadaka/Documents/BepAm_website/public/brand/bep-am-logo.png`
-- Create: `/Users/tadaka/Documents/BepAm_website/README.md`
+- Create: `package.json`
+- Create: `astro.config.mjs`
+- Create: `src/layouts/base-layout.astro`
+- Create: `src/styles/global.css`
+- Create: `public/brand/bep-am-logo.png`
+- Create: `README.md`
 
 ## Implementation Steps
 

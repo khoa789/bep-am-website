@@ -4,12 +4,14 @@ status: approved
 direction: "Kỹ nghệ ấm áp"
 updated: 2026-08-29
 source:
-  - "/Users/tadaka/Documents/Bep Am_Knowledge Base/raw/sources/Brand_Guidelines_BepAm_v2.0.pdf"
-  - "/Users/tadaka/Documents/Bep Am_Knowledge Base/raw/Bep Am info/marketing-strategy.md"
-  - "/Users/tadaka/Documents/Bep Am_Knowledge Base/raw/Bep Am info/products.md"
+  - "Bep Am_Knowledge Base/raw/sources/Brand_Guidelines_BepAm_v2.0.pdf"
+  - "Bep Am_Knowledge Base/raw/Bep Am info/marketing-strategy.md"
+  - "Bep Am_Knowledge Base/raw/Bep Am info/products.md"
 ---
 
 # Design System Bếp Ấm
+
+> Homepage update approved 2026-09-16: [DESIGN.md](../DESIGN.md) owns the current editorial direction, serif typography, paper surfaces and consultation CTA. The remaining brand and business rules below remain applicable.
 
 ## 1. Mục tiêu trải nghiệm
 

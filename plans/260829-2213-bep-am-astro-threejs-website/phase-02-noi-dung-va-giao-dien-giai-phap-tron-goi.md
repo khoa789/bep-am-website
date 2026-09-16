@@ -24,11 +24,11 @@ Các section Astro dùng dữ liệu typed trong `src/data/site-content.ts`. Com
 
 ## Related Code Files
 
-- Create: `/Users/tadaka/Documents/BepAm_website/src/pages/index.astro`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/data/site-content.ts`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/components/site-header.astro`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/components/solution-ecosystem.astro`
-- Create: `/Users/tadaka/Documents/BepAm_website/src/components/showroom-cta.astro`
+- Create: `src/pages/index.astro`
+- Create: `src/data/site-content.ts`
+- Create: `src/components/site-header.astro`
+- Create: `src/components/solution-ecosystem.astro`
+- Create: `src/components/showroom-cta.astro`
 
 ## Implementation Steps
 

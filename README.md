@@ -6,7 +6,7 @@ Website marketing cho Bếp Ấm, xây bằng Astro và một React Three Fiber 
 
 - Astro: nội dung, SEO và static output.
 - React Three Fiber + Three.js: trải nghiệm 3D Lecmax tải khi cần.
-- Cloudflare Workers Static Assets: đích triển khai static; chưa tạo tài nguyên hoặc deploy production.
+- Cloudflare Workers Static Assets: phục vụ website production từ bản build tĩnh.
 
 ## Chạy local
 
@@ -35,7 +35,7 @@ Site xuất hoàn toàn tĩnh vào `dist/` và được cấu hình trong `wrang
 Workers Static Assets project, không có Worker script, D1 hay server runtime. Cấu hình này
 giữ website đơn giản và vẫn để ngỏ khả năng thêm API/Workers về sau nếu có nhu cầu thật.
 
-Khi đã được duyệt triển khai và máy đã đăng nhập Cloudflare:
+Triển khai production từ máy đã đăng nhập Cloudflare:
 
 ```bash
 pnpm exec wrangler whoami
@@ -48,6 +48,10 @@ Astro dùng URL này để sinh canonical và ảnh Open Graph tuyệt đối. K
 domain, đặt `PUBLIC_SITE_URL=https://ten-mien-moi.vn` tại lúc build để ghi đè.
 
 ## Nguồn thiết kế
+
+- `DESIGN.md`: hướng trang chủ “Hồ sơ một gian bếp ấm” được duyệt ngày 16/09/2026.
+- `docs/image-sources.json`: nguồn ảnh Lecmax; ảnh tham khảo không đại diện công trình Bếp Ấm.
+- Đặt lịch tư vấn hiện qua điện thoại, không có API nhận lịch.
 
 - `design-system/MASTER.md`: hệ màu, typography, motion, accessibility và hành trình nội dung đã duyệt.
 - `docs/threejs-research.md`: repo Three.js/R3F đã đánh giá và quyết định dùng hoặc loại khỏi MVP.
