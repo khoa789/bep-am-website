@@ -21,7 +21,7 @@ export const contact = {
   secondaryPhoneHref: "tel:+84988425263",
   address: "168C Xô Viết Nghệ Tĩnh, Phường Ninh Kiều, Thành phố Cần Thơ",
   mapHref: "https://maps.app.goo.gl/B5KLqwL42T8q4hr8A",
-  facebookHref: "https://facebook.com/BepAm.LecmaxCanTho",
+  facebookHref: "https://www.facebook.com/bepamcantho",
   openingHours: "Mở cửa 7 ngày/tuần, đến 19:00 mỗi ngày",
 } as const;
 
