@@ -1,0 +1,37 @@
+{
+ "slug": "artek-fi--en-company-about",
+ "title": "Artek Fi",
+ "sourceUrl": "https://artek.fi",
+ "capturedAt": "2026-05-12",
+ "image": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/artek-fi--en-company-about/hero.1440.webp?v=1778609262",
+ "fullPage": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/artek-fi--en-company-about/full.1440.webp?v=1778609262",
+ "thumb": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/artek-fi--en-company-about/thumb.384.webp?v=1778609262",
+ "mobile": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/artek-fi--en-company-about/mobile.384.webp?v=1778609262",
+ "mobileFull": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/artek-fi--en-company-about/mobile-full.png?v=1778609262",
+ "imagePng": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/artek-fi--en-company-about/hero.png?v=1778609262",
+ "northstar": "Warm, sculpted wood and soft creams float in a quiet, thoughtfully curated space.",
+ "autopsy": "FOLD: Top nav: logo left, links center-left (Company, Products, Spaces), links center-right (Reading Room, Where to buy, Artek Stores), \"Shop online\" pill button, icons far right. Breadcrumb below nav: Artek > Company > About Artek. Headline \"About Artek\" left-aligned, sentence case, large, 1 line. Subhead \"Art & Technology since 1935\" beneath, smaller. No CTA in text zone. Hero: black-and-white archival photograph of mid-century modern interior with pendant lamps, street view through window, vintage car; occupies bottom ~55% of viewport, full-bleed width. Text floats in generous white space above image; visual dominates lower half, text anchors upper-left quadrant.\n\nTYPE: Sans-serif display, medium weight, clean geometric (likely similar to Futura or custom), sentence case; body sans same family, much smaller (~1:4 jump). No tracking quirks.\n\nCOLOR: White background; near-black text; accent #b84450 not visible in this viewport (reserved for hover states or deeper pages). Image is monochrome.\n\nSIGNATURE: Archival black-and-white photography treated as full-bleed hero beneath stark minimal white text block - museum catalog austerity.",
+ "description": "The page uses a clean, spacious layout with a focus on product photography and a muted color palette. Typography is restrained, allowing the product and imagery to take center stage. The overall feeling is one of understated elegance and thoughtful design.",
+ "palette": ["#b84450", "#601a09", "#db9ea4", "#866b4b", "#acaa9c"],
+ "fonts": ["artek futura", "Arial"],
+ "tech": [],
+ "mode": "light",
+ "tags": {
+  "style": ["minimalism", "editorial", "swiss"],
+  "industry": ["furniture", "ecommerce"],
+  "components": ["hero-fullbleed", "logo-cloud"],
+  "vibe": ["calm", "soft", "warm"]
+ },
+ "macrostructure": {
+  "slug": "portfolio-grid",
+  "label": "Portfolio Grid"
+ },
+ "axes": {
+  "paperBand": "mid",
+  "displayClass": "geometric-sans",
+  "accentHue": "warm",
+  "paperL": 82,
+  "accentDeg": 17,
+  "displayFace": "artek futura"
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "slug": "houseofhoney-com",
+ "title": "House of Honey | Interior Design Studio",
+ "sourceUrl": "https://houseofhoney.com/",
+ "capturedAt": "2026-05-28",
+ "image": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/houseofhoney-com/hero.1440.webp?v=1779976839",
+ "fullPage": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/houseofhoney-com/full.1440.webp?v=1779976839",
+ "thumb": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/houseofhoney-com/thumb.384.webp?v=1779976839",
+ "mobile": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/houseofhoney-com/mobile.384.webp?v=1779976839",
+ "mobileFull": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/houseofhoney-com/mobile-full.png?v=1779976839",
+ "imagePng": "https://0nme3pk5am3urwa9.public.blob.vercel-storage.com/captures/houseofhoney-com/hero.png?v=1779976853",
+ "northstar": "Warm, muted earth tones cradle spacious layouts and gently confident, humanist type.",
+ "autopsy": "FOLD: Nav pinned top, left: logo + five text links (Studio, Spaces, The Buzz, Dear Honey, Press Room); right: \"Get in Touch\" pill button with arrow. Massive centered headline \"HOUSE of HONEY\" - \"of\" in flowing script, all else in ultra-bold extended sans, ~3 lines tall. Flanking subheads: left \"INTERIORS, OBJECTS & ATMOSPHERES\", right \"DESIGNED WITH PLEASURE\", both small caps, serif, anchored to headline baseline. No CTA in hero. Full-bleed photograph below: interior with pink walls, orange sofa, oversized flowers, two windows, bookshelf, framed floral art; occupies ~55% viewport, sits below text fold.\n\nTYPE: Display: ultra-extended bold sans (HOUSE/HONEY), script italic (\"of\"). Body: sharp high-contrast serif, small caps, tight leading. Scale jump: ~15:1 display to body.\n\nCOLOR: Background #fcdcac (warm cream). Text #73231e (deep rust-brown). Accent #fccc64 (soft yellow) - none visible in hero, reserved per palette hint.\n\nSIGNATURE: Script \"of\" threaded between two sans words, its tail dipping below baseline, creating ligature-like bridge across the headline gap.",
+ "description": "House of Honey designs soulful, expressive interiors where life is celebrated. A California-based studio creating spaces with warmth, craft and character.",
+ "palette": ["#fccc64", "#fcdcac", "#73231e", "#8f6354", "#a8cac8"],
+ "fonts": ["Noe Text", "Neue Haas Grotesk"],
+ "tech": ["Next.js", "Vercel", "Tailwind"],
+ "mode": "light",
+ "tags": {
+  "style": ["minimalism", "editorial", "swiss"],
+  "industry": ["architecture"],
+  "components": ["hero-fullbleed", "logo-cloud", "bento-grid"],
+  "vibe": ["calm", "soft", "warm"]
+ },
+ "macrostructure": {
+  "slug": "bento-grid",
+  "label": "Bento Grid"
+ },
+ "axes": {
+  "paperBand": "mid",
+  "displayClass": "grotesk-sans",
+  "accentHue": "chromatic-other",
+  "paperL": 70.2,
+  "accentDeg": 85,
+  "displayFace": "Noe Text"
+ }
+}

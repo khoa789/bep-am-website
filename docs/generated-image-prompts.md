@@ -2,6 +2,10 @@
 
 Created with the built-in ChatGPT image generation tool. Visual material reference: supplied Lecmax 3D render folder, inspected before generation. These images are conceptual, not completed customer projects or manufacturing drawings. Closed cabinet fronts cannot verify hidden material construction.
 
+## Album mở rộng tháng 09/2026
+
+45 phối cảnh bổ sung, chia đều cho ba bộ sưu tập: xem [tài liệu album](collection-albums.md) và [toàn bộ prompt](../output/imagegen/collection-albums/manifest.json). Ảnh được tạo bằng công cụ tích hợp; người dùng chấp nhận không xác minh được mô hình.
+
 ## kitchen-concept-1
 
 Output: public/images/kitchen-concept-1-800.webp and -1600.webp

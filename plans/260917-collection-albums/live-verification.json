@@ -1,0 +1,28 @@
+{
+  "base": "https://bep-am-website.tdk-onwork.workers.dev",
+  "version": "4e704aad-0325-4717-bb11-1a7fb14fe1f5",
+  "assets": 135,
+  "assets_match_local": true,
+  "bytes": 7919634,
+  "pages": [
+    {
+      "slug": "can-ho-tinh-gon",
+      "http_ok": true,
+      "images": 15,
+      "matches_build": true
+    },
+    {
+      "slug": "hai-hoa-ban-menh",
+      "http_ok": true,
+      "images": 15,
+      "matches_build": true
+    },
+    {
+      "slug": "nhip-song-hien-dai",
+      "http_ok": true,
+      "images": 15,
+      "matches_build": true
+    }
+  ],
+  "failures": []
+}

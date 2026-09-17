@@ -133,5 +133,365 @@
     "source": "ChatGPT built-in image generation",
     "prompt": "docs/generated-image-prompts.md",
     "classification": "Phối cảnh ý tưởng AI, không phải công trình thực tế"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/01-trang-ngoc-trai",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-01"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/02-sage-kem",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-02"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/03-xanh-bui",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-03"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/04-champagne",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-04"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/05-greige",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-05"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/06-xanh-bac-ha",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-06"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/07-xam-ngoc",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-07"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/08-kem-dao",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-08"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/09-olive-sang",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-09"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/10-trang-xanh-khoi",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-10"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/11-be-cat",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-11"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/12-ghi-anh-tim",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-12"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/13-trang-inox",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-13"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/14-xanh-ngoc-nhat",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-14"
+  },
+  {
+    "file": "collections/can-ho-tinh-gon/15-taupe-kem",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "can-ho-tinh-gon-15"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/01-ngoc-trai-champagne",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-01"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/02-trang-bac",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-02"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/03-ghi-su",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-03"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/04-xanh-rung",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-04"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/05-xanh-reu",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-05"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/06-xanh-ngoc-bich",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-06"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/07-xanh-hai-quan",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-07"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/08-xanh-petrol",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-08"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/09-den-khoi",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-09"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/10-do-ruou",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-10"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/11-dat-nung",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-11"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/12-hong-dat",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-12"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/13-be-mat-ong",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-13"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/14-nau-ca-phe",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-14"
+  },
+  {
+    "file": "collections/hai-hoa-ban-menh/15-vang-cat",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "hai-hoa-ban-menh-15"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/01-graphite-do-thi",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-01"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/02-dong-khoi",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-02"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/03-trang-den",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-03"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/04-greige-gia-dinh",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-04"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/05-xanh-dem",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-05"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/06-champagne-mo",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-06"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/07-xam-thep",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-07"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/08-olive-graphite",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-08"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/09-kem-toi-gian",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-09"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/10-taupe-tiec-nha",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-10"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/11-petrol-da-trang",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-11"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/12-nau-khoi",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-12"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/13-ghi-xanh",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-13"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/14-xanh-rung-dem",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-14"
+  },
+  {
+    "file": "collections/nhip-song-hien-dai/15-ngoc-trai-rong-mo",
+    "source": "Generated with built-in OpenAI image_gen tool; actual model not exposed",
+    "credit": "Phối cảnh ý tưởng Bếp Ấm tạo bằng AI",
+    "classification": "Phối cảnh AI lấy cảm hứng từ cánh tủ bóng kính; không phải công trình đã thi công",
+    "promptManifest": "output/imagegen/collection-albums/manifest.json",
+    "promptId": "nhip-song-hien-dai-15"
   }
 ]
