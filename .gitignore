@@ -22,3 +22,8 @@ coverage/
 
 # Full-resolution generated originals stay local; optimized copies are published.
 /output/imagegen/collection-albums/*/*.png
+/output/imagegen/collection-expansion/*/*.png
+
+/output/imagegen/collection-expansion/superseded/
+
+/output/imagegen/collection-aerial/*/*.png

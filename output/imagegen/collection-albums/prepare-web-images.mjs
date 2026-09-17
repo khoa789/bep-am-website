@@ -5,9 +5,11 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 
 const run = promisify(execFile);
-const folder = dirname(fileURLToPath(import.meta.url));
-const root = resolve(folder, '../../..');
-const manifest = JSON.parse(await readFile(resolve(folder, 'manifest.json'), 'utf8'));
+const scriptFolder = dirname(fileURLToPath(import.meta.url));
+const root = resolve(scriptFolder, '../../..');
+const manifestPath = process.argv[2] ? resolve(process.argv[2]) : resolve(scriptFolder, 'manifest.json');
+const folder = dirname(manifestPath);
+const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
 const images = manifest.collections.flatMap(collection => collection.images.map(image => ({ ...image, slug: collection.slug })));
 // Check the entire source set before writing any publishable derivative.
 await Promise.all(images.map(image => access(resolve(folder, image.file))));
