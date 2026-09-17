@@ -18,6 +18,7 @@
 .collection-album__caption-heading > span { color: var(--color-brand); font-size: .875rem; font-variant-numeric: tabular-nums; }
 .collection-album__caption-heading h3 { color: var(--color-ink); font-size: 1.5rem; }
 .collection-album__entry figcaption p { margin-bottom: .5rem; font-size: 1rem; }
+.collection-album__colors { overflow-wrap: anywhere; }
 .collection-album__entry figcaption .collection-album__id { font-size: .875rem; overflow-wrap: anywhere; }
 .collection-album__id span { color: var(--color-ink); }
 .collection-album__viewer { width: min(1440px, calc(100% - 2rem)); max-width: none; max-height: calc(100dvh - 2rem); margin: auto; padding: 0; border: 1px solid var(--color-line); color: var(--color-ink); background: var(--color-canvas); overflow: auto; }
@@ -37,6 +38,8 @@
 .collection-album__stage p:empty { display: none; }
 .collection-album__viewer-caption { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; margin-top: 1rem; }
 .collection-album__viewer-caption h2 { font-size: 1.5rem; }
+.collection-album__viewer-caption > div { min-width: 0; }
+.collection-album__viewer-caption [data-album-details] { white-space: pre-line; }
 .collection-album__viewer-caption p { margin: .25rem 0 0; font-size: .875rem; color: var(--color-muted); overflow-wrap: anywhere; }
 .collection-album__viewer-caption > a { display: flex; align-items: center; min-height: 3rem; white-space: nowrap; font-size: .875rem; }
 .collection-album__controls { display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-top: 1rem; }

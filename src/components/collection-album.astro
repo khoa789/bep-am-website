@@ -23,7 +23,7 @@ const { images, slug, title } = Astro.props;
           href={collectionImagePath(image, 1600)}
           data-album-image
           data-title={image.title}
-          data-details={`${image.layout} · ${image.space}`}
+          data-details={[`${image.layout} · ${image.space}`, image.colorNotes].filter(Boolean).join("\n")}
           data-id={image.id}
           aria-label={`Xem ảnh ${index + 1}: ${image.title}`}
         >
@@ -38,6 +38,7 @@ const { images, slug, title } = Astro.props;
         <figcaption>
           <div class="collection-album__caption-heading"><span>{String(index + 1).padStart(2, "0")}</span><h3>{image.title}</h3></div>
           <p>{image.layout} · {image.space}</p>
+          {image.colorNotes && <p class="collection-album__colors">{image.colorNotes}</p>}
           <p class="collection-album__id">Mã ảnh: <span>{image.id}</span></p>
         </figcaption>
       </figure>

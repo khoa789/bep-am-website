@@ -1,0 +1,44 @@
+---
+import EditorialLayout from "../../layouts/editorial-layout.astro";
+import { collections, kitchenConcepts } from "../../data/editorial-content";
+import { collectionAlbums } from "../../data/collection-albums";
+import "../../styles/collection-discovery.css";
+---
+
+<EditorialLayout
+  title="Bộ sưu tập bếp đẹp"
+  description={`${collections.length} bộ sưu tập cho những không gian và nhịp sống khác nhau. Tìm cảm hứng cho căn bếp của bạn.`}
+  image="/images/kitchen-concept-2-1600.webp"
+  category="Cảm hứng cho căn bếp"
+>
+  <p class="collection-directory__note">
+    Các bộ sưu tập gồm 15–30 phối cảnh ý tưởng tạo bằng AI, lấy cảm hứng từ vật liệu Lecmax.
+    Không đại diện công trình đã thi công.
+  </p>
+  <div class="collection-directory">
+    {collections.map((collection, index) => (
+      <a
+        class="collection-directory__entry"
+        href={`/bo-suu-tap/${collection.slug}/`}
+        aria-labelledby={`collection-title-${collection.slug}`}
+      >
+        <figure>
+          <img
+            src={`/images/${collection.image}-800.webp`}
+            srcset={`/images/${collection.image}-800.webp 800w, /images/${collection.image}-1600.webp 1600w`}
+            sizes="(max-width: 700px) calc(100vw - 48px), (max-width: 1296px) calc((100vw - 128px) / 2), 584px"
+            width="1600"
+            height="900"
+            loading={index < 2 ? "eager" : "lazy"}
+            decoding="async"
+            alt={kitchenConcepts.find((concept) => concept.image === collection.image)?.alt ?? collectionAlbums[collection.slug][0].alt}
+          />
+          <figcaption>{collectionAlbums[collection.slug].length} phối cảnh AI</figcaption>
+        </figure>
+        <h2 id={`collection-title-${collection.slug}`}>{collection.title}</h2>
+        <p>{collection.intro}</p>
+        <span class="collection-directory__action">Khám phá bộ sưu tập <span aria-hidden="true">↗</span></span>
+      </a>
+    ))}
+  </div>
+</EditorialLayout>

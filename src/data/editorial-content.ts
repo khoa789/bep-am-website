@@ -96,7 +96,171 @@ export const collections = [
       },
     ],
   },
+  {
+    slug: "nha-pho-thoang-sang",
+    title: "Bếp nhà phố thoáng sáng",
+    image: "collections/nha-pho-thoang-sang/01-kem-ngoc-1",
+    intro: "Đón ánh sáng, mở lối cho sinh hoạt.",
+    description: "Gợi ý bố trí bếp nhà phố theo chiều sâu, tận dụng cửa sổ, giếng trời và khoảng thông thoáng.",
+    images: [],
+    sections: [
+      {
+        title: "Để ánh sáng đi sâu vào nhà",
+        body: "Giữ vùng gần cửa sổ và giếng trời thông thoáng khi bố trí hệ tủ cao. Cánh kính tông sáng có thể tạo cảm giác nhẹ hơn, nhưng cần xem mẫu tại vị trí dự kiến để kiểm tra phản chiếu và chói sáng.",
+      },
+      {
+        title: "Sắp xếp theo chiều dài mặt bằng",
+        body: "Bếp chữ I, chữ L hoặc hai dãy song song đều có thể phù hợp với nhà phố. Hãy kiểm tra đường đi từ cửa vào, vùng mở tủ lạnh và chỗ đứng sơ chế trước khi chọn thêm đảo hay bán đảo.",
+      },
+      {
+        title: "Tính đường thoát khí từ đầu",
+        body: "Vị trí bếp từ và hút mùi cần được xem cùng tuyến điện, đường ống và điều kiện thông gió của căn nhà. Giếng trời tạo ánh sáng nhưng không thay thế việc kiểm tra phương án hút mùi theo thiết bị thực tế.",
+      },
+    ],
+  },
+  {
+    slug: "bep-mo-nha-them-gan",
+    title: "Bếp mở, nhà thêm gần",
+    image: "collections/bep-mo-nha-them-gan/01-ngoc-trai-1",
+    intro: "Nấu nướng và trò chuyện cùng nhau.",
+    description: "Những gian bếp nối liền phòng khách và bàn ăn, để người nấu luôn ở trong câu chuyện của cả nhà.",
+    images: [],
+    sections: [
+      {
+        title: "Nối không gian bằng một bảng màu",
+        body: "Chọn màu cánh tủ cùng với sàn, bàn ăn và đồ nội thất phòng khách. Một bảng màu liền mạch giúp khu bếp hòa vào tổng thể; mặt bàn và ánh sáng có thể đánh dấu vùng nấu mà không cần vách ngăn.",
+      },
+      {
+        title: "Chọn chỗ ngồi ngoài vùng thao tác",
+        body: "Đảo hoặc bán đảo có thể tạo chỗ ngồi trò chuyện khi chuẩn bị bữa ăn. Đặt ghế ở phía không cản lối lấy đồ và mở ngăn kéo, đồng thời giữ khoảng cách phù hợp với vùng nấu nóng.",
+      },
+      {
+        title: "Quan tâm đến mùi và tiếng động",
+        body: "Vì không gian dùng chung, hãy trao đổi thói quen nấu và thời điểm sinh hoạt trước khi chọn hút mùi, máy rửa bát cùng vị trí thiết bị. Lối thu dọn sau bữa ăn cũng cần thuận tiện như lối nấu.",
+      },
+    ],
+  },
+  {
+    slug: "bep-nhin-ra-vuon",
+    title: "Bếp nhìn ra vườn",
+    image: "collections/bep-nhin-ra-vuon/01-trang-ngoc-1",
+    intro: "Một khoảng xanh trong tầm mắt.",
+    description: "Ý tưởng bếp hướng sân vườn với ánh sáng tự nhiên, cánh kính dịu màu và góc nhìn thoáng qua cửa.",
+    images: [],
+    sections: [
+      {
+        title: "Giữ lại góc nhìn yêu thích",
+        body: "Nếu căn nhà có khoảng vườn, hãy chọn vị trí đứng sơ chế hoặc ngồi ăn sáng nhìn về phía đó. Hệ tủ cao nên được cân nhắc để không che hết cửa; cũng cần kiểm tra cánh cửa sổ khi mở.",
+      },
+      {
+        title: "Cân bằng nắng và ánh sáng làm việc",
+        body: "Quan sát hướng nắng theo giờ để chọn rèm, mái che hoặc vị trí thiết bị. Ánh sáng tự nhiên thay đổi trong ngày, vì vậy chậu rửa và mặt bàn vẫn cần nguồn sáng làm việc riêng cho buổi tối.",
+      },
+      {
+        title: "Chọn màu cùng khung cảnh thật",
+        body: "Sắc trắng ngọc, xanh lá dịu hay tông đất có thể đi cùng mảng xanh ngoài cửa. Hãy đối chiếu mẫu kính và đá với màu khung cửa, sàn và ánh sáng thực tế thay vì quyết định chỉ từ phối cảnh.",
+      },
+    ],
+  },
+  {
+    slug: "sac-tram-tinh-te",
+    title: "Bếp sắc trầm tinh tế",
+    image: "collections/sac-tram-tinh-te/01-graphite-1",
+    intro: "Gam trầm, điểm sáng vừa đủ.",
+    description: "Khám phá graphite, xanh đêm và nâu khói trên cánh kính bóng, phối cùng mặt đá và ánh sáng ấm.",
+    images: [],
+    sections: [
+      {
+        title: "Đặt gam trầm ở đúng diện tích",
+        body: "Có thể dùng sắc trầm cho toàn hệ tủ hoặc tập trung ở tủ dưới và đảo. Quyết định dựa trên lượng ánh sáng, màu sàn và độ rộng không gian để tổng thể vẫn dễ nhìn và dễ sử dụng.",
+      },
+      {
+        title: "Chiếu sáng rõ vùng thao tác",
+        body: "Ánh sáng dưới tủ và tại mặt bàn giúp đọc rõ bề mặt khi sơ chế. Với cánh bóng kính, nên thử vị trí đèn để hạn chế phản chiếu vào mắt người đứng bếp và người ngồi tại bàn ăn.",
+      },
+      {
+        title: "Thử mẫu dưới hai nguồn sáng",
+        body: "Graphite, xanh đêm và nâu khói có thể đổi cảm nhận giữa ban ngày và ánh đèn. Đặt mẫu cánh cạnh mẫu đá, tay nắm và màu tường; xem cả dấu tay và cách lau trước khi chọn hoàn thiện.",
+      },
+    ],
+  },
+  {
+    slug: "bep-cho-nha-dong-nguoi",
+    title: "Bếp cho nhà đông người",
+    image: "collections/bep-cho-nha-dong-nguoi/01-kem-am-1",
+    intro: "Cùng nấu, cùng vui, cùng quây quần.",
+    description: "Gian bếp cho nhiều thành viên cùng chuẩn bị bữa ăn, chuyện trò và chia sẻ những việc nhỏ mỗi ngày.",
+    images: [],
+    sections: [
+      {
+        title: "Chia chỗ để cùng làm",
+        body: "Tách vùng rửa, sơ chế và bày món để nhiều người có thể phụ nhau. Trên mặt bằng, thử tình huống một người mở tủ lạnh trong khi người khác đứng nấu hoặc mang món ra bàn.",
+      },
+      {
+        title: "Đồ dùng vừa tầm từng người",
+        body: "Bát đĩa, dụng cụ và thực phẩm dùng thường xuyên nên ở vị trí dễ lấy với người sử dụng chính. Đồ nặng cần chỗ cất thuận tay; khu vực dành cho trẻ phụ bếp nên tách khỏi bếp nấu và vật sắc nhọn.",
+      },
+      {
+        title: "Dành chỗ cho cuộc trò chuyện",
+        body: "Bàn ăn dài hoặc một phía của bán đảo có thể là nơi ngồi chờ, nhặt rau và trò chuyện. Giữ đường di chuyển đến bàn thoáng, tính cả ghế khi kéo ra và việc thu dọn sau bữa cơm đông người.",
+      },
+    ],
+  },
+  {
+    slug: "bep-va-goc-ca-phe",
+    title: "Bếp và góc cà phê",
+    image: "collections/bep-va-goc-ca-phe/01-trang-sua-1",
+    intro: "Bắt đầu ngày mới ở góc quen.",
+    description: "Một quầy pha chế nhỏ hòa vào căn bếp, có chỗ cho máy cà phê, tách và những phút thong thả đầu ngày.",
+    images: [],
+    sections: [
+      {
+        title: "Gom việc pha chế vào một góc",
+        body: "Đặt máy, hạt cà phê và tách gần nhau để chuẩn bị đồ uống gọn hơn. Một khoảng mặt bàn trống cạnh máy giúp thao tác; vị trí gần nguồn nước hay chậu rửa cần cân nhắc theo thói quen sử dụng.",
+      },
+      {
+        title: "Chừa khoảng cho thiết bị hoạt động",
+        body: "Đo cả khoảng mở bình nước, lấy khay và vệ sinh máy trước khi làm hốc tủ. Kiểm tra yêu cầu thoát nhiệt cùng vị trí ổ điện theo hướng dẫn của thiết bị, nhất là khi đặt máy trong một khoang kín.",
+      },
+      {
+        title: "Một chỗ ngồi đón buổi sáng",
+        body: "Quầy cạnh cửa sổ hoặc đầu bán đảo có thể trở thành góc uống cà phê. Chọn vị trí ngồi không cản việc nấu, giữ đồ dùng hằng ngày trong tầm với và để cảnh ngoài cửa làm điểm nhìn.",
+      },
+    ],
+  },
+  {
+    slug: "toan-canh-bep-tu-tren-cao",
+    title: "Toàn cảnh bếp từ trên cao",
+    image: "collections/toan-canh-bep-tu-tren-cao/01-chu-l-xanh-dam-trang",
+    intro: "Nhìn trọn căn bếp, hiểu rõ bố trí.",
+    description: "30 phối cảnh góc xiên từ độ cao 2,5–4 m, nhìn toàn bộ căn bếp với cánh kính bóng, bếp từ và bảng màu Lecmax.",
+    images: [],
+    sections: [
+      {
+        title: "Nhìn toàn cảnh từ góc cao",
+        body: "Góc nhìn xiên từ độ cao khoảng 2,5–4 m cho thấy toàn bộ hệ tủ, mặt bàn, đảo và lối đi trong cùng một khung hình. Dùng các phối cảnh để so sánh cách bố trí và hình dung đường di chuyển giữa khu lấy đồ, rửa, sơ chế và nấu.",
+      },
+      {
+        title: "So sánh bố trí cùng thiết bị",
+        body: "Các ý tưởng dùng cánh phẳng bóng kính và bếp từ mặt phẳng, với nhiều cách sắp xếp tủ và đảo. Khi chọn một bố cục yêu thích, cần đối chiếu kích thước thực tế, khoảng mở thiết bị và nhu cầu của gia đình trước khi triển khai.",
+      },
+      {
+        title: "Đối chiếu mã màu trên mẫu thật",
+        body: "Chú thích từng ảnh ghi mã màu Lecmax được dùng làm tham chiếu cho các vùng tủ. Màu trong ảnh AI chỉ là mô phỏng gần đúng, chịu ảnh hưởng của ánh sáng và màn hình. Hãy xem mẫu kính thật cùng mặt đá tại showroom trước khi chốt bảng màu.",
+      },
+    ],
+  },
 ];
+
+export const homepageCollectionSlugs = [
+  "can-ho-tinh-gon",
+  "hai-hoa-ban-menh",
+  "nhip-song-hien-dai",
+] as const;
+
+export const homepageCollections = homepageCollectionSlugs.map(
+  (slug) => collections.find((collection) => collection.slug === slug)!,
+);
 
 export const articles = [
   {

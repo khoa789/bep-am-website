@@ -4,13 +4,14 @@ import { collectionAlbums, collectionImagePath } from "../src/data/collection-al
 import { collections } from "../src/data/editorial-content";
 
 describe("collection album publishing contract", () => {
-  it("provides fifteen uniquely identified concepts for each existing collection route", () => {
+  it("provides fifteen concepts for nine collections and thirty for the aerial collection", () => {
+    expect(collections).toHaveLength(10);
     expect(Object.keys(collectionAlbums).sort()).toEqual(collections.map(({ slug }) => slug).sort());
     const allIds: string[] = [];
     const allPaths: string[] = [];
     for (const { slug } of collections) {
       const images = collectionAlbums[slug];
-      expect(images).toHaveLength(15);
+      expect(images).toHaveLength(slug === "toan-canh-bep-tu-tren-cao" ? 30 : 15);
       images.forEach((image, index) => {
         expect(image.id).toBe(`${slug}-${String(index + 1).padStart(2, "0")}`);
         expect(image.image).toMatch(new RegExp(`^${slug}/[a-z0-9-]+$`));
@@ -22,9 +23,17 @@ describe("collection album publishing contract", () => {
         for (const width of [320, 800, 1600] as const) allPaths.push(collectionImagePath(image, width));
       });
     }
-    expect(new Set(allIds).size).toBe(45);
-    expect(new Set(allPaths).size).toBe(135);
+    expect(new Set(allIds).size).toBe(165);
+    expect(new Set(allPaths).size).toBe(495);
     expect(allPaths.every((path) => path.startsWith("/images/collections/") && path.endsWith(".webp"))).toBe(true);
+  });
+  it("includes Lecmax color references for every aerial concept", () => {
+    const images = collectionAlbums["toan-canh-bep-tu-tren-cao"];
+    expect(images).toHaveLength(30);
+    for (const image of images) {
+      expect(image.colorNotes, image.id).toContain("Mã màu Lecmax:");
+      expect(image.colorNotes?.match(/\b[A-Z]?\d{4,5}\b/g)?.length, image.id).toBeGreaterThanOrEqual(2);
+    }
   });
   it("publishes every responsive image and thumbnail as a nonempty asset", async () => {
     await Promise.all(Object.values(collectionAlbums).flat().flatMap((image) =>

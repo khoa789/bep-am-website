@@ -1,0 +1,274 @@
+{
+  "toan-canh-bep-tu-tren-cao": [
+    {
+      "id": "toan-canh-bep-tu-tren-cao-01",
+      "image": "toan-canh-bep-tu-tren-cao/01-chu-l-xanh-dam-trang",
+      "title": "Chữ L · Xanh đậm & trắng",
+      "layout": "Chữ L",
+      "space": "Căn hộ góc",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l nhìn từ trên cao 3–4 m, cánh bóng kính xanh đậm phối trắng, căn hộ góc.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2608 (xanh đậm); tủ trên và tủ cao 8683 (trắng)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-02",
+      "image": "toan-canh-bep-tu-tren-cao/02-chu-i-dao",
+      "title": "Chữ I + đảo · Xám nâu & vàng hồng",
+      "layout": "Chữ I + đảo",
+      "space": "Nhà phố mở",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ i + đảo nhìn từ trên cao 3–4 m, cánh bóng kính xám nâu phối vàng hồng, nhà phố mở.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 2616 (xám nâu); tủ trên và tủ cao 2614 (vàng hồng)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-03",
+      "image": "toan-canh-bep-tu-tren-cao/03-chu-u",
+      "title": "Chữ U · Xám đậm & trắng xanh",
+      "layout": "Chữ U",
+      "space": "Căn hộ gia đình",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ u nhìn từ trên cao 3–4 m, cánh bóng kính xám đậm phối trắng xanh, căn hộ gia đình.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2625 (xám đậm); tủ trên và tủ cao 2621 (trắng xanh)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-04",
+      "image": "toan-canh-bep-tu-tren-cao/04-song-song",
+      "title": "Song song · Nâu khói nhũ & xanh nhạt",
+      "layout": "Song song",
+      "space": "Nhà phố dài",
+      "alt": "Phối cảnh AI toàn cảnh bếp song song nhìn từ trên cao 3–4 m, cánh bóng kính nâu khói nhũ phối xanh nhạt, nhà phố dài.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 3603 (nâu khói nhũ); tủ trên và tủ cao 2628 (xanh nhạt)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-05",
+      "image": "toan-canh-bep-tu-tren-cao/05-chu-l-ban-dao",
+      "title": "Chữ L + bán đảo · Xanh mint & xám nhũ",
+      "layout": "Chữ L + bán đảo",
+      "space": "Căn hộ sáng",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l + bán đảo nhìn từ trên cao 3–4 m, cánh bóng kính xanh mint phối xám nhũ, căn hộ sáng.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và bán đảo 2629 (xanh mint); tủ trên và tủ cao 3604 (xám nhũ)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-06",
+      "image": "toan-canh-bep-tu-tren-cao/06-chu-u-dao",
+      "title": "Chữ U + đảo · Xám đậm nhũ & vàng nhũ",
+      "layout": "Chữ U + đảo",
+      "space": "Nhà vườn rộng",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ u + đảo nhìn từ trên cao 3–4 m, cánh bóng kính xám đậm nhũ phối vàng nhũ, nhà vườn rộng.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 3602 (xám đậm nhũ); tủ trên và tủ cao 3601 (vàng nhũ)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-07",
+      "image": "toan-canh-bep-tu-tren-cao/07-bep-san-trong",
+      "title": "Chữ L + đảo · Xanh đậm & trắng nhũ",
+      "layout": "Chữ L + đảo",
+      "space": "Nhà có sân trong",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l + đảo nhìn từ trên cao 3–4 m, cánh bóng kính xanh đậm phối trắng nhũ, nhà có sân trong.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 2608 (xanh đậm); tủ trên và tủ cao K8312 (trắng nhũ)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-08",
+      "image": "toan-canh-bep-tu-tren-cao/08-chu-i-nho",
+      "title": "Chữ I · Be & xanh nhạt",
+      "layout": "Chữ I",
+      "space": "Studio gọn gàng",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ i nhìn từ trên cao 3–4 m, cánh bóng kính be phối xanh nhạt, studio gọn gàng.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2626 (be); tủ trên và tủ cao 2628 (xanh nhạt)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-09",
+      "image": "toan-canh-bep-tu-tren-cao/09-hai-day-mo",
+      "title": "Song song mở · Xám nhạt & vàng hồng",
+      "layout": "Song song mở",
+      "space": "Căn hộ thông phòng",
+      "alt": "Phối cảnh AI toàn cảnh bếp song song mở nhìn từ trên cao 3–4 m, cánh bóng kính xám nhạt phối vàng hồng, căn hộ thông phòng.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2624 (xám nhạt); tủ trên và tủ cao 2614 (vàng hồng)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-10",
+      "image": "toan-canh-bep-tu-tren-cao/10-dao-ban-an",
+      "title": "Chữ I + đảo · Xám nâu & trắng nhũ",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp liền bàn ăn",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ i + đảo nhìn từ trên cao 3–4 m, cánh bóng kính xám nâu phối trắng nhũ, bếp liền bàn ăn.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 2616 (xám nâu); tủ trên và tủ cao K8312 (trắng nhũ)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-11",
+      "image": "toan-canh-bep-tu-tren-cao/11-bep-goc-vuon",
+      "title": "Chữ L · Nâu khói nhũ & trắng xanh",
+      "layout": "Chữ L",
+      "space": "Bếp nhìn ra vườn",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l nhìn từ trên cao 3–4 m, cánh bóng kính nâu khói nhũ phối trắng xanh, bếp nhìn ra vườn.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 3603 (nâu khói nhũ); tủ trên và tủ cao 2621 (trắng xanh)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-12",
+      "image": "toan-canh-bep-tu-tren-cao/12-ban-dao-cong",
+      "title": "Chữ U mở · Xám đậm & xanh mint",
+      "layout": "Chữ U mở",
+      "space": "Nhà phố hướng sân",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ u mở nhìn từ trên cao 3–4 m, cánh bóng kính xám đậm phối xanh mint, nhà phố hướng sân.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2625 (xám đậm); tủ trên và tủ cao 2629 (xanh mint)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-13",
+      "image": "toan-canh-bep-tu-tren-cao/13-dao-vuong",
+      "title": "Chữ L + đảo vuông · Xám nhũ & xanh đậm",
+      "layout": "Chữ L + đảo vuông",
+      "space": "Duplex",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l + đảo vuông nhìn từ trên cao 3–4 m, cánh bóng kính xám nhũ phối xanh đậm, duplex.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 3604 (xám nhũ); tủ trên và tủ cao 2608 (xanh đậm)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-14",
+      "image": "toan-canh-bep-tu-tren-cao/14-bep-cua-so-dai",
+      "title": "Song song · Vàng nhũ & be",
+      "layout": "Song song",
+      "space": "Nhà nhiều cửa sổ",
+      "alt": "Phối cảnh AI toàn cảnh bếp song song nhìn từ trên cao 3–4 m, cánh bóng kính vàng nhũ phối be, nhà nhiều cửa sổ.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 3601 (vàng nhũ); tủ trên và tủ cao 2626 (be)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-15",
+      "image": "toan-canh-bep-tu-tren-cao/15-bep-goc-ca-phe",
+      "title": "Chữ L + bán đảo · Xanh mint & vàng hồng",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp có góc cà phê",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l + bán đảo nhìn từ trên cao 3–4 m, cánh bóng kính xanh mint phối vàng hồng, bếp có góc cà phê.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và bán đảo 2629 (xanh mint); tủ trên và tủ cao 2614 (vàng hồng)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-16",
+      "image": "toan-canh-bep-tu-tren-cao/16-bep-ban-an-tron",
+      "title": "Chữ I · Xanh nhạt & trắng",
+      "layout": "Chữ I",
+      "space": "Căn hộ ven sông",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ i nhìn từ trên cao 2,5–3 m, cánh bóng kính xanh nhạt phối trắng, căn hộ ven sông.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2628 (xanh nhạt); tủ trên và tủ cao 8683 (trắng)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-17",
+      "image": "toan-canh-bep-tu-tren-cao/17-bep-cao-rong",
+      "title": "Chữ U + đảo · Xám đậm nhũ & trắng xanh",
+      "layout": "Chữ U + đảo",
+      "space": "Nhà trần cao",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ u + đảo nhìn từ trên cao 2,5–3 m, cánh bóng kính xám đậm nhũ phối trắng xanh, nhà trần cao.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 3602 (xám đậm nhũ); tủ trên và tủ cao 2621 (trắng xanh)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-18",
+      "image": "toan-canh-bep-tu-tren-cao/18-bep-can-ho-goc",
+      "title": "Chữ L · Vàng hồng & xám nhạt",
+      "layout": "Chữ L",
+      "space": "Căn hộ hai mặt thoáng",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l nhìn từ trên cao 2,5–3 m, cánh bóng kính vàng hồng phối xám nhạt, căn hộ hai mặt thoáng.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2614 (vàng hồng); tủ trên và tủ cao 2624 (xám nhạt)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-19",
+      "image": "toan-canh-bep-tu-tren-cao/19-bep-dao-dai",
+      "title": "Chữ I + đảo dài · Xanh đậm & vàng nhũ",
+      "layout": "Chữ I + đảo dài",
+      "space": "Không gian tiếp khách",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ i + đảo dài nhìn từ trên cao 2,5–3 m, cánh bóng kính xanh đậm phối vàng nhũ, không gian tiếp khách.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 2608 (xanh đậm); tủ trên và tủ cao 3601 (vàng nhũ)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-20",
+      "image": "toan-canh-bep-tu-tren-cao/20-bep-sau-nha",
+      "title": "Song song · Nâu khói nhũ & trắng nhũ",
+      "layout": "Song song",
+      "space": "Nhà phố có sân sau",
+      "alt": "Phối cảnh AI toàn cảnh bếp song song nhìn từ trên cao 2,5–3 m, cánh bóng kính nâu khói nhũ phối trắng nhũ, nhà phố có sân sau.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 3603 (nâu khói nhũ); tủ trên và tủ cao K8312 (trắng nhũ)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-21",
+      "image": "toan-canh-bep-tu-tren-cao/21-bep-doan-tu",
+      "title": "Chữ L + đảo · Be & xanh mint",
+      "layout": "Chữ L + đảo",
+      "space": "Nhà nhiều thế hệ",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l + đảo nhìn từ trên cao 2,5–3 m, cánh bóng kính be phối xanh mint, nhà nhiều thế hệ.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 2626 (be); tủ trên và tủ cao 2629 (xanh mint)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-22",
+      "image": "toan-canh-bep-tu-tren-cao/22-bep-ben-cua-truot",
+      "title": "Chữ U · Xám nâu & xanh nhạt",
+      "layout": "Chữ U",
+      "space": "Nhà vườn cửa kính",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ u nhìn từ trên cao 2,5–3 m, cánh bóng kính xám nâu phối xanh nhạt, nhà vườn cửa kính.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2616 (xám nâu); tủ trên và tủ cao 2628 (xanh nhạt)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-23",
+      "image": "toan-canh-bep-tu-tren-cao/23-bep-gieng-troi",
+      "title": "Chữ L + bán đảo · Xám nhũ & vàng hồng",
+      "layout": "Chữ L + bán đảo",
+      "space": "Nhà phố giếng trời",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l + bán đảo nhìn từ trên cao 2,5–3 m, cánh bóng kính xám nhũ phối vàng hồng, nhà phố giếng trời.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và bán đảo 3604 (xám nhũ); tủ trên và tủ cao 2614 (vàng hồng)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-24",
+      "image": "toan-canh-bep-tu-tren-cao/24-bep-dao-ca-phe",
+      "title": "Chữ I + đảo · Xám đậm & trắng nhũ",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp và quầy cà phê",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ i + đảo nhìn từ trên cao 2,5–3 m, cánh bóng kính xám đậm phối trắng nhũ, bếp và quầy cà phê.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 2625 (xám đậm); tủ trên và tủ cao K8312 (trắng nhũ)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-25",
+      "image": "toan-canh-bep-tu-tren-cao/25-bep-can-ho-nho",
+      "title": "Chữ L · Xanh mint & trắng",
+      "layout": "Chữ L",
+      "space": "Căn hộ nhỏ",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l nhìn từ trên cao 2,5–3 m, cánh bóng kính xanh mint phối trắng, căn hộ nhỏ.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2629 (xanh mint); tủ trên và tủ cao 8683 (trắng)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-26",
+      "image": "toan-canh-bep-tu-tren-cao/26-bep-vuon-nhiet-doi",
+      "title": "Chữ L + đảo · Vàng nhũ & xanh đậm",
+      "layout": "Chữ L + đảo",
+      "space": "Biệt thự sân vườn",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l + đảo nhìn từ trên cao 2,5–3 m, cánh bóng kính vàng nhũ phối xanh đậm, biệt thự sân vườn.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 3601 (vàng nhũ); tủ trên và tủ cao 2608 (xanh đậm)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-27",
+      "image": "toan-canh-bep-tu-tren-cao/27-bep-ban-dao-rong",
+      "title": "Chữ U mở · Xám đậm nhũ & be",
+      "layout": "Chữ U mở",
+      "space": "Nhà phố rộng",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ u mở nhìn từ trên cao 2,5–3 m, cánh bóng kính xám đậm nhũ phối be, nhà phố rộng.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 3602 (xám đậm nhũ); tủ trên và tủ cao 2626 (be)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-28",
+      "image": "toan-canh-bep-tu-tren-cao/28-bep-hai-day-sang",
+      "title": "Song song mở · Xanh nhạt & nâu khói nhũ",
+      "layout": "Song song mở",
+      "space": "Căn hộ đón nắng",
+      "alt": "Phối cảnh AI toàn cảnh bếp song song mở nhìn từ trên cao 2,5–3 m, cánh bóng kính xanh nhạt phối nâu khói nhũ, căn hộ đón nắng.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới 2628 (xanh nhạt); tủ trên và tủ cao 3603 (nâu khói nhũ)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-29",
+      "image": "toan-canh-bep-tu-tren-cao/29-bep-ket-noi",
+      "title": "Chữ I + đảo · Vàng hồng & trắng xanh",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp liền phòng khách",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ i + đảo nhìn từ trên cao 2,5–3 m, cánh bóng kính vàng hồng phối trắng xanh, bếp liền phòng khách.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và đảo bếp 2614 (vàng hồng); tủ trên và tủ cao 2621 (trắng xanh)."
+    },
+    {
+      "id": "toan-canh-bep-tu-tren-cao-30",
+      "image": "toan-canh-bep-tu-tren-cao/30-bep-tinh-gon-trang",
+      "title": "Chữ L + bán đảo · Xám nhạt & trắng nhũ",
+      "layout": "Chữ L + bán đảo",
+      "space": "Căn hộ tối giản",
+      "alt": "Phối cảnh AI toàn cảnh bếp chữ l + bán đảo nhìn từ trên cao 2,5–3 m, cánh bóng kính xám nhạt phối trắng nhũ, căn hộ tối giản.",
+      "colorNotes": "Mã màu Lecmax: Tủ dưới và bán đảo 2624 (xám nhạt); tủ trên và tủ cao K8312 (trắng nhũ)."
+    }
+  ]
+}

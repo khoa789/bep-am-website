@@ -1,5 +1,6 @@
 ---
-import { collections } from "../data/editorial-content";
+import { collections, homepageCollections } from "../data/editorial-content";
+import "../styles/collection-discovery.css";
 ---
 
 <section
@@ -17,7 +18,7 @@ import { collections } from "../data/editorial-content";
     </p>
   </div>
   <div class="collection-list">
-    {collections.map((item, index) => (
+    {homepageCollections.map((item, index) => (
       <a class="collection-link" href={`/bo-suu-tap/${item.slug}/`}>
         <img
           src={`/images/${item.image}-800.webp`}
@@ -37,6 +38,9 @@ import { collections } from "../data/editorial-content";
       </a>
     ))}
   </div>
+  <a class="text-link collection-discovery" href="/bo-suu-tap/">
+    Xem tất cả {collections.length} bộ sưu tập <span aria-hidden="true">↗</span>
+  </a>
   <p class="source-note">
     Hình ảnh phối cảnh ý tưởng tạo bằng AI, lấy cảm hứng từ vật liệu Lecmax.
     Không đại diện công trình đã thi công.

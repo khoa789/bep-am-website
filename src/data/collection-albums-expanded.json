@@ -1,0 +1,734 @@
+{
+  "nha-pho-thoang-sang": [
+    {
+      "id": "nha-pho-thoang-sang-01",
+      "image": "nha-pho-thoang-sang/01-kem-ngoc-1",
+      "title": "Giếng trời giữa nhà · Kem ngọc",
+      "layout": "Chữ L",
+      "space": "Nhà phố có giếng trời",
+      "alt": "Phối cảnh AI bếp cánh bóng kính kem ngọc, chữ l, nhà phố có giếng trời."
+    },
+    {
+      "id": "nha-pho-thoang-sang-02",
+      "image": "nha-pho-thoang-sang/02-champagne-1",
+      "title": "Giếng trời giữa nhà · Champagne",
+      "layout": "Chữ L",
+      "space": "Nhà phố có giếng trời",
+      "alt": "Phối cảnh AI bếp cánh bóng kính champagne, chữ l, nhà phố có giếng trời."
+    },
+    {
+      "id": "nha-pho-thoang-sang-03",
+      "image": "nha-pho-thoang-sang/03-xanh-khoi-1",
+      "title": "Giếng trời giữa nhà · Xanh khói",
+      "layout": "Chữ L",
+      "space": "Nhà phố có giếng trời",
+      "alt": "Phối cảnh AI bếp cánh bóng kính xanh khói, chữ l, nhà phố có giếng trời."
+    },
+    {
+      "id": "nha-pho-thoang-sang-04",
+      "image": "nha-pho-thoang-sang/04-kem-ngoc-2",
+      "title": "Sân sau đón nắng · Nâu khói nhũ & xanh nhạt",
+      "layout": "Song song",
+      "space": "Nhà phố hướng sân sau",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối nâu khói nhũ và xanh nhạt, song song, nhà phố hướng sân sau."
+    },
+    {
+      "id": "nha-pho-thoang-sang-05",
+      "image": "nha-pho-thoang-sang/05-champagne-2",
+      "title": "Sân sau đón nắng · Champagne",
+      "layout": "Song song",
+      "space": "Nhà phố hướng sân sau",
+      "alt": "Phối cảnh AI bếp cánh bóng kính champagne, song song, nhà phố hướng sân sau."
+    },
+    {
+      "id": "nha-pho-thoang-sang-06",
+      "image": "nha-pho-thoang-sang/06-xanh-khoi-2",
+      "title": "Sân sau đón nắng · Xám đậm nhũ & vàng nhũ",
+      "layout": "Song song",
+      "space": "Nhà phố hướng sân sau",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm nhũ và vàng nhũ, song song, nhà phố hướng sân sau."
+    },
+    {
+      "id": "nha-pho-thoang-sang-07",
+      "image": "nha-pho-thoang-sang/07-kem-ngoc-3",
+      "title": "Cửa bên dịu sáng · Kem ngọc",
+      "layout": "Chữ U",
+      "space": "Nhà phố có cửa sổ bên",
+      "alt": "Phối cảnh AI bếp cánh bóng kính kem ngọc, chữ u, nhà phố có cửa sổ bên."
+    },
+    {
+      "id": "nha-pho-thoang-sang-08",
+      "image": "nha-pho-thoang-sang/08-champagne-3",
+      "title": "Cửa bên dịu sáng · Be & xanh nhạt",
+      "layout": "Chữ U",
+      "space": "Nhà phố có cửa sổ bên",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối be và xanh nhạt, chữ u, nhà phố có cửa sổ bên."
+    },
+    {
+      "id": "nha-pho-thoang-sang-09",
+      "image": "nha-pho-thoang-sang/09-xanh-khoi-3",
+      "title": "Cửa bên dịu sáng · Xanh khói",
+      "layout": "Chữ U",
+      "space": "Nhà phố có cửa sổ bên",
+      "alt": "Phối cảnh AI bếp cánh bóng kính xanh khói, chữ u, nhà phố có cửa sổ bên."
+    },
+    {
+      "id": "nha-pho-thoang-sang-10",
+      "image": "nha-pho-thoang-sang/10-kem-ngoc-4",
+      "title": "Bán đảo cuối nhà · Xám nâu & trắng nhũ",
+      "layout": "Chữ L + bán đảo",
+      "space": "Nhà phố nối bàn ăn",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và trắng nhũ, chữ l + bán đảo, nhà phố nối bàn ăn."
+    },
+    {
+      "id": "nha-pho-thoang-sang-11",
+      "image": "nha-pho-thoang-sang/11-champagne-4",
+      "title": "Bán đảo cuối nhà · Champagne",
+      "layout": "Chữ L + bán đảo",
+      "space": "Nhà phố nối bàn ăn",
+      "alt": "Phối cảnh AI bếp cánh bóng kính champagne, chữ l + bán đảo, nhà phố nối bàn ăn."
+    },
+    {
+      "id": "nha-pho-thoang-sang-12",
+      "image": "nha-pho-thoang-sang/12-xanh-khoi-4",
+      "title": "Bán đảo cuối nhà · Xám đậm & xanh mint",
+      "layout": "Chữ L + bán đảo",
+      "space": "Nhà phố nối bàn ăn",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và xanh mint, chữ l + bán đảo, nhà phố nối bàn ăn."
+    },
+    {
+      "id": "nha-pho-thoang-sang-13",
+      "image": "nha-pho-thoang-sang/13-kem-ngoc-5",
+      "title": "Khoảng thông tầng · Kem ngọc",
+      "layout": "Chữ I + đảo",
+      "space": "Nhà phố có thông tầng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính kem ngọc, chữ i + đảo, nhà phố có thông tầng."
+    },
+    {
+      "id": "nha-pho-thoang-sang-14",
+      "image": "nha-pho-thoang-sang/14-champagne-5",
+      "title": "Khoảng thông tầng · Vàng nhũ & be",
+      "layout": "Chữ I + đảo",
+      "space": "Nhà phố có thông tầng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối vàng nhũ và be, chữ i + đảo, nhà phố có thông tầng."
+    },
+    {
+      "id": "nha-pho-thoang-sang-15",
+      "image": "nha-pho-thoang-sang/15-xanh-khoi-5",
+      "title": "Khoảng thông tầng · Xanh khói",
+      "layout": "Chữ I + đảo",
+      "space": "Nhà phố có thông tầng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính xanh khói, chữ i + đảo, nhà phố có thông tầng."
+    }
+  ],
+  "bep-mo-nha-them-gan": [
+    {
+      "id": "bep-mo-nha-them-gan-01",
+      "image": "bep-mo-nha-them-gan/01-ngoc-trai-1",
+      "title": "Đảo bên phòng khách · Ngọc trai",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp nối phòng khách",
+      "alt": "Phối cảnh AI bếp cánh bóng kính ngọc trai, chữ i + đảo, bếp nối phòng khách."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-02",
+      "image": "bep-mo-nha-them-gan/02-sage-diu-1",
+      "title": "Đảo bên phòng khách · Sage dịu",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp nối phòng khách",
+      "alt": "Phối cảnh AI bếp cánh bóng kính sage dịu, chữ i + đảo, bếp nối phòng khách."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-03",
+      "image": "bep-mo-nha-them-gan/03-be-champagne-1",
+      "title": "Đảo bên phòng khách · Be champagne",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp nối phòng khách",
+      "alt": "Phối cảnh AI bếp cánh bóng kính be champagne, chữ i + đảo, bếp nối phòng khách."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-04",
+      "image": "bep-mo-nha-them-gan/04-ngoc-trai-2",
+      "title": "Bán đảo kết nối · Xanh đậm & trắng nhũ",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp mở có bán đảo",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh đậm và trắng nhũ, chữ l + bán đảo, bếp mở có bán đảo."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-05",
+      "image": "bep-mo-nha-them-gan/05-sage-diu-2",
+      "title": "Bán đảo kết nối · Sage dịu",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp mở có bán đảo",
+      "alt": "Phối cảnh AI bếp cánh bóng kính sage dịu, chữ l + bán đảo, bếp mở có bán đảo."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-06",
+      "image": "bep-mo-nha-them-gan/06-be-champagne-2",
+      "title": "Bán đảo kết nối · Xám nhạt & vàng hồng",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp mở có bán đảo",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nhạt và vàng hồng, chữ l + bán đảo, bếp mở có bán đảo."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-07",
+      "image": "bep-mo-nha-them-gan/07-ngoc-trai-3",
+      "title": "Bàn ăn liền nhịp · Ngọc trai",
+      "layout": "Chữ L",
+      "space": "Bếp cạnh bàn ăn dài",
+      "alt": "Phối cảnh AI bếp cánh bóng kính ngọc trai, chữ l, bếp cạnh bàn ăn dài."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-08",
+      "image": "bep-mo-nha-them-gan/08-sage-diu-3",
+      "title": "Bàn ăn liền nhịp · Nâu khói nhũ & trắng xanh",
+      "layout": "Chữ L",
+      "space": "Bếp cạnh bàn ăn dài",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối nâu khói nhũ và trắng xanh, chữ l, bếp cạnh bàn ăn dài."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-09",
+      "image": "bep-mo-nha-them-gan/09-be-champagne-3",
+      "title": "Bàn ăn liền nhịp · Be champagne",
+      "layout": "Chữ L",
+      "space": "Bếp cạnh bàn ăn dài",
+      "alt": "Phối cảnh AI bếp cánh bóng kính be champagne, chữ l, bếp cạnh bàn ăn dài."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-10",
+      "image": "bep-mo-nha-them-gan/10-ngoc-trai-4",
+      "title": "Đảo hai phía · Xám nhũ & xanh đậm",
+      "layout": "Chữ U + đảo",
+      "space": "Không gian chung rộng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nhũ và xanh đậm, chữ u + đảo, không gian chung rộng."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-11",
+      "image": "bep-mo-nha-them-gan/11-sage-diu-4",
+      "title": "Đảo hai phía · Sage dịu",
+      "layout": "Chữ U + đảo",
+      "space": "Không gian chung rộng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính sage dịu, chữ u + đảo, không gian chung rộng."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-12",
+      "image": "bep-mo-nha-them-gan/12-be-champagne-4",
+      "title": "Đảo hai phía · Xanh mint & vàng hồng",
+      "layout": "Chữ U + đảo",
+      "space": "Không gian chung rộng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh mint và vàng hồng, chữ u + đảo, không gian chung rộng."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-13",
+      "image": "bep-mo-nha-them-gan/13-ngoc-trai-5",
+      "title": "Không gian xuyên suốt · Ngọc trai",
+      "layout": "Song song mở",
+      "space": "Nhà mở liên thông",
+      "alt": "Phối cảnh AI bếp cánh bóng kính ngọc trai, song song mở, nhà mở liên thông."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-14",
+      "image": "bep-mo-nha-them-gan/14-sage-diu-5",
+      "title": "Không gian xuyên suốt · Xanh đậm & trắng",
+      "layout": "Song song mở",
+      "space": "Nhà mở liên thông",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh đậm và trắng, song song mở, nhà mở liên thông."
+    },
+    {
+      "id": "bep-mo-nha-them-gan-15",
+      "image": "bep-mo-nha-them-gan/15-be-champagne-5",
+      "title": "Không gian xuyên suốt · Be champagne",
+      "layout": "Song song mở",
+      "space": "Nhà mở liên thông",
+      "alt": "Phối cảnh AI bếp cánh bóng kính be champagne, song song mở, nhà mở liên thông."
+    }
+  ],
+  "bep-nhin-ra-vuon": [
+    {
+      "id": "bep-nhin-ra-vuon-01",
+      "image": "bep-nhin-ra-vuon/01-trang-ngoc-1",
+      "title": "Vườn bên ô cửa · Trắng ngọc",
+      "layout": "Chữ L",
+      "space": "Bếp cạnh vườn nhiệt đới",
+      "alt": "Phối cảnh AI bếp cánh bóng kính trắng ngọc, chữ l, bếp cạnh vườn nhiệt đới."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-02",
+      "image": "bep-nhin-ra-vuon/02-xanh-sage-1",
+      "title": "Vườn bên ô cửa · Xanh sage",
+      "layout": "Chữ L",
+      "space": "Bếp cạnh vườn nhiệt đới",
+      "alt": "Phối cảnh AI bếp cánh bóng kính xanh sage, chữ l, bếp cạnh vườn nhiệt đới."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-03",
+      "image": "bep-nhin-ra-vuon/03-olive-sang-1",
+      "title": "Vườn bên ô cửa · Olive sáng",
+      "layout": "Chữ L",
+      "space": "Bếp cạnh vườn nhiệt đới",
+      "alt": "Phối cảnh AI bếp cánh bóng kính olive sáng, chữ l, bếp cạnh vườn nhiệt đới."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-04",
+      "image": "bep-nhin-ra-vuon/04-trang-ngoc-2",
+      "title": "Sân trong bình yên · Xám nâu & trắng nhũ",
+      "layout": "Chữ U",
+      "space": "Bếp ôm sân trong",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và trắng nhũ, chữ u, bếp ôm sân trong."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-05",
+      "image": "bep-nhin-ra-vuon/05-xanh-sage-2",
+      "title": "Sân trong bình yên · Xanh sage",
+      "layout": "Chữ U",
+      "space": "Bếp ôm sân trong",
+      "alt": "Phối cảnh AI bếp cánh bóng kính xanh sage, chữ u, bếp ôm sân trong."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-06",
+      "image": "bep-nhin-ra-vuon/06-olive-sang-2",
+      "title": "Sân trong bình yên · Xám đậm & xanh mint",
+      "layout": "Chữ U",
+      "space": "Bếp ôm sân trong",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và xanh mint, chữ u, bếp ôm sân trong."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-07",
+      "image": "bep-nhin-ra-vuon/07-trang-ngoc-3",
+      "title": "Đảo hướng vườn · Trắng ngọc",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp mở tầm nhìn ra vườn",
+      "alt": "Phối cảnh AI bếp cánh bóng kính trắng ngọc, chữ i + đảo, bếp mở tầm nhìn ra vườn."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-08",
+      "image": "bep-nhin-ra-vuon/08-xanh-sage-3",
+      "title": "Đảo hướng vườn · Vàng nhũ & be",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp mở tầm nhìn ra vườn",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối vàng nhũ và be, chữ i + đảo, bếp mở tầm nhìn ra vườn."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-09",
+      "image": "bep-nhin-ra-vuon/09-olive-sang-3",
+      "title": "Đảo hướng vườn · Olive sáng",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp mở tầm nhìn ra vườn",
+      "alt": "Phối cảnh AI bếp cánh bóng kính olive sáng, chữ i + đảo, bếp mở tầm nhìn ra vườn."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-10",
+      "image": "bep-nhin-ra-vuon/10-trang-ngoc-4",
+      "title": "Hiên nhà xanh · Xám nâu & vàng hồng",
+      "layout": "Song song",
+      "space": "Bếp cạnh hiên có mái",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và vàng hồng, song song, bếp cạnh hiên có mái."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-11",
+      "image": "bep-nhin-ra-vuon/11-xanh-sage-4",
+      "title": "Hiên nhà xanh · Xanh sage",
+      "layout": "Song song",
+      "space": "Bếp cạnh hiên có mái",
+      "alt": "Phối cảnh AI bếp cánh bóng kính xanh sage, song song, bếp cạnh hiên có mái."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-12",
+      "image": "bep-nhin-ra-vuon/12-olive-sang-4",
+      "title": "Hiên nhà xanh · Xám đậm & trắng xanh",
+      "layout": "Song song",
+      "space": "Bếp cạnh hiên có mái",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và trắng xanh, song song, bếp cạnh hiên có mái."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-13",
+      "image": "bep-nhin-ra-vuon/13-trang-ngoc-5",
+      "title": "Góc vườn hai phía · Trắng ngọc",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp có cửa kính góc",
+      "alt": "Phối cảnh AI bếp cánh bóng kính trắng ngọc, chữ l + bán đảo, bếp có cửa kính góc."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-14",
+      "image": "bep-nhin-ra-vuon/14-xanh-sage-5",
+      "title": "Góc vườn hai phía · Xanh mint & xám nhũ",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp có cửa kính góc",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh mint và xám nhũ, chữ l + bán đảo, bếp có cửa kính góc."
+    },
+    {
+      "id": "bep-nhin-ra-vuon-15",
+      "image": "bep-nhin-ra-vuon/15-olive-sang-5",
+      "title": "Góc vườn hai phía · Olive sáng",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp có cửa kính góc",
+      "alt": "Phối cảnh AI bếp cánh bóng kính olive sáng, chữ l + bán đảo, bếp có cửa kính góc."
+    }
+  ],
+  "sac-tram-tinh-te": [
+    {
+      "id": "sac-tram-tinh-te-01",
+      "image": "sac-tram-tinh-te/01-graphite-1",
+      "title": "Graphite bên cửa lớn · Xám nâu & vàng hồng",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp trầm có ánh sáng ngày",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và vàng hồng, chữ i + đảo, bếp trầm có ánh sáng ngày."
+    },
+    {
+      "id": "sac-tram-tinh-te-02",
+      "image": "sac-tram-tinh-te/02-xanh-dem-1",
+      "title": "Graphite bên cửa lớn · Xanh đậm & trắng",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp trầm có ánh sáng ngày",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh đậm và trắng, chữ i + đảo, bếp trầm có ánh sáng ngày."
+    },
+    {
+      "id": "sac-tram-tinh-te-03",
+      "image": "sac-tram-tinh-te/03-nau-khoi-1",
+      "title": "Graphite bên cửa lớn · Xám đậm & trắng xanh",
+      "layout": "Chữ I + đảo",
+      "space": "Bếp trầm có ánh sáng ngày",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và trắng xanh, chữ i + đảo, bếp trầm có ánh sáng ngày."
+    },
+    {
+      "id": "sac-tram-tinh-te-04",
+      "image": "sac-tram-tinh-te/04-graphite-2",
+      "title": "Góc tối ấm · Nâu khói nhũ & xanh nhạt",
+      "layout": "Chữ L",
+      "space": "Bếp chữ L ánh sáng ấm",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối nâu khói nhũ và xanh nhạt, chữ l, bếp chữ l ánh sáng ấm."
+    },
+    {
+      "id": "sac-tram-tinh-te-05",
+      "image": "sac-tram-tinh-te/05-xanh-dem-2",
+      "title": "Góc tối ấm · Xanh mint & xám nhũ",
+      "layout": "Chữ L",
+      "space": "Bếp chữ L ánh sáng ấm",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh mint và xám nhũ, chữ l, bếp chữ l ánh sáng ấm."
+    },
+    {
+      "id": "sac-tram-tinh-te-06",
+      "image": "sac-tram-tinh-te/06-nau-khoi-2",
+      "title": "Góc tối ấm · Xám đậm nhũ & vàng nhũ",
+      "layout": "Chữ L",
+      "space": "Bếp chữ L ánh sáng ấm",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm nhũ và vàng nhũ, chữ l, bếp chữ l ánh sáng ấm."
+    },
+    {
+      "id": "sac-tram-tinh-te-07",
+      "image": "sac-tram-tinh-te/07-graphite-3",
+      "title": "Hai dải phản chiếu · Xanh đậm & trắng nhũ",
+      "layout": "Song song",
+      "space": "Bếp song song sắc trầm",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh đậm và trắng nhũ, song song, bếp song song sắc trầm."
+    },
+    {
+      "id": "sac-tram-tinh-te-08",
+      "image": "sac-tram-tinh-te/08-xanh-dem-3",
+      "title": "Hai dải phản chiếu · Be & xanh nhạt",
+      "layout": "Song song",
+      "space": "Bếp song song sắc trầm",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối be và xanh nhạt, song song, bếp song song sắc trầm."
+    },
+    {
+      "id": "sac-tram-tinh-te-09",
+      "image": "sac-tram-tinh-te/09-nau-khoi-3",
+      "title": "Hai dải phản chiếu · Xám nhạt & vàng hồng",
+      "layout": "Song song",
+      "space": "Bếp song song sắc trầm",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nhạt và vàng hồng, song song, bếp song song sắc trầm."
+    },
+    {
+      "id": "sac-tram-tinh-te-10",
+      "image": "sac-tram-tinh-te/10-graphite-4",
+      "title": "Đảo trong ánh chiều · Xám nâu & trắng nhũ",
+      "layout": "Chữ U + đảo",
+      "space": "Bếp rộng ánh chiều",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và trắng nhũ, chữ u + đảo, bếp rộng ánh chiều."
+    },
+    {
+      "id": "sac-tram-tinh-te-11",
+      "image": "sac-tram-tinh-te/11-xanh-dem-4",
+      "title": "Đảo trong ánh chiều · Nâu khói nhũ & trắng xanh",
+      "layout": "Chữ U + đảo",
+      "space": "Bếp rộng ánh chiều",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối nâu khói nhũ và trắng xanh, chữ u + đảo, bếp rộng ánh chiều."
+    },
+    {
+      "id": "sac-tram-tinh-te-12",
+      "image": "sac-tram-tinh-te/12-nau-khoi-4",
+      "title": "Đảo trong ánh chiều · Xám đậm & xanh mint",
+      "layout": "Chữ U + đảo",
+      "space": "Bếp rộng ánh chiều",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và xanh mint, chữ u + đảo, bếp rộng ánh chiều."
+    },
+    {
+      "id": "sac-tram-tinh-te-13",
+      "image": "sac-tram-tinh-te/13-graphite-5",
+      "title": "Bán đảo đêm ấm · Xám nhũ & xanh đậm",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp mở buổi tối",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nhũ và xanh đậm, chữ l + bán đảo, bếp mở buổi tối."
+    },
+    {
+      "id": "sac-tram-tinh-te-14",
+      "image": "sac-tram-tinh-te/14-xanh-dem-5",
+      "title": "Bán đảo đêm ấm · Vàng nhũ & be",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp mở buổi tối",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối vàng nhũ và be, chữ l + bán đảo, bếp mở buổi tối."
+    },
+    {
+      "id": "sac-tram-tinh-te-15",
+      "image": "sac-tram-tinh-te/15-nau-khoi-5",
+      "title": "Bán đảo đêm ấm · Xanh mint & vàng hồng",
+      "layout": "Chữ L + bán đảo",
+      "space": "Bếp mở buổi tối",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh mint và vàng hồng, chữ l + bán đảo, bếp mở buổi tối."
+    }
+  ],
+  "bep-cho-nha-dong-nguoi": [
+    {
+      "id": "bep-cho-nha-dong-nguoi-01",
+      "image": "bep-cho-nha-dong-nguoi/01-kem-am-1",
+      "title": "Cùng chuẩn bị bữa cơm · Xám nhũ & xanh đậm",
+      "layout": "Chữ L + đảo",
+      "space": "Gia đình cùng sơ chế",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nhũ và xanh đậm, chữ l + đảo, gia đình cùng sơ chế, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-02",
+      "image": "bep-cho-nha-dong-nguoi/02-sage-trang-1",
+      "title": "Cùng chuẩn bị bữa cơm · Vàng nhũ & be",
+      "layout": "Chữ L + đảo",
+      "space": "Gia đình cùng sơ chế",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối vàng nhũ và be, chữ l + đảo, gia đình cùng sơ chế, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-03",
+      "image": "bep-cho-nha-dong-nguoi/03-champagne-diu-1",
+      "title": "Cùng chuẩn bị bữa cơm · Xanh mint & vàng hồng",
+      "layout": "Chữ L + đảo",
+      "space": "Gia đình cùng sơ chế",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh mint và vàng hồng, chữ l + đảo, gia đình cùng sơ chế, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-04",
+      "image": "bep-cho-nha-dong-nguoi/04-kem-am-2",
+      "title": "Ba thế hệ sum vầy · Xám nâu & vàng hồng",
+      "layout": "Chữ U + đảo",
+      "space": "Gia đình ba thế hệ",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và vàng hồng, chữ u + đảo, gia đình ba thế hệ, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-05",
+      "image": "bep-cho-nha-dong-nguoi/05-sage-trang-2",
+      "title": "Ba thế hệ sum vầy · Xanh đậm & trắng",
+      "layout": "Chữ U + đảo",
+      "space": "Gia đình ba thế hệ",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh đậm và trắng, chữ u + đảo, gia đình ba thế hệ, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-06",
+      "image": "bep-cho-nha-dong-nguoi/06-champagne-diu-2",
+      "title": "Ba thế hệ sum vầy · Xám đậm & trắng xanh",
+      "layout": "Chữ U + đảo",
+      "space": "Gia đình ba thế hệ",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và trắng xanh, chữ u + đảo, gia đình ba thế hệ, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-07",
+      "image": "bep-cho-nha-dong-nguoi/07-kem-am-3",
+      "title": "Hai người cùng nấu · Nâu khói nhũ & xanh nhạt",
+      "layout": "Song song rộng",
+      "space": "Hai vùng thao tác riêng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối nâu khói nhũ và xanh nhạt, song song rộng, hai vùng thao tác riêng, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-08",
+      "image": "bep-cho-nha-dong-nguoi/08-sage-trang-3",
+      "title": "Hai người cùng nấu · Xanh mint & xám nhũ",
+      "layout": "Song song rộng",
+      "space": "Hai vùng thao tác riêng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh mint và xám nhũ, song song rộng, hai vùng thao tác riêng, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-09",
+      "image": "bep-cho-nha-dong-nguoi/09-champagne-diu-3",
+      "title": "Hai người cùng nấu · Xám đậm nhũ & vàng nhũ",
+      "layout": "Song song rộng",
+      "space": "Hai vùng thao tác riêng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm nhũ và vàng nhũ, song song rộng, hai vùng thao tác riêng, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-10",
+      "image": "bep-cho-nha-dong-nguoi/10-kem-am-4",
+      "title": "Bàn dài đón cả nhà · Xanh đậm & trắng nhũ",
+      "layout": "Chữ I + đảo dài",
+      "space": "Bếp cạnh bàn ăn gia đình",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh đậm và trắng nhũ, chữ i + đảo dài, bếp cạnh bàn ăn gia đình, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-11",
+      "image": "bep-cho-nha-dong-nguoi/11-sage-trang-4",
+      "title": "Bàn dài đón cả nhà · Be & xanh nhạt",
+      "layout": "Chữ I + đảo dài",
+      "space": "Bếp cạnh bàn ăn gia đình",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối be và xanh nhạt, chữ i + đảo dài, bếp cạnh bàn ăn gia đình, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-12",
+      "image": "bep-cho-nha-dong-nguoi/12-champagne-diu-4",
+      "title": "Bàn dài đón cả nhà · Xám nhạt & vàng hồng",
+      "layout": "Chữ I + đảo dài",
+      "space": "Bếp cạnh bàn ăn gia đình",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nhạt và vàng hồng, chữ i + đảo dài, bếp cạnh bàn ăn gia đình, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-13",
+      "image": "bep-cho-nha-dong-nguoi/13-kem-am-5",
+      "title": "Ngày cuối tuần bên nhau · Xám nâu & trắng nhũ",
+      "layout": "Chữ L + bán đảo",
+      "space": "Gia đình quây quần cuối tuần",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và trắng nhũ, chữ l + bán đảo, gia đình quây quần cuối tuần, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-14",
+      "image": "bep-cho-nha-dong-nguoi/14-sage-trang-5",
+      "title": "Ngày cuối tuần bên nhau · Nâu khói nhũ & trắng xanh",
+      "layout": "Chữ L + bán đảo",
+      "space": "Gia đình quây quần cuối tuần",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối nâu khói nhũ và trắng xanh, chữ l + bán đảo, gia đình quây quần cuối tuần, gia đình cười nói vui vẻ."
+    },
+    {
+      "id": "bep-cho-nha-dong-nguoi-15",
+      "image": "bep-cho-nha-dong-nguoi/15-champagne-diu-5",
+      "title": "Ngày cuối tuần bên nhau · Xám đậm & xanh mint",
+      "layout": "Chữ L + bán đảo",
+      "space": "Gia đình quây quần cuối tuần",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và xanh mint, chữ l + bán đảo, gia đình quây quần cuối tuần, gia đình cười nói vui vẻ."
+    }
+  ],
+  "bep-va-goc-ca-phe": [
+    {
+      "id": "bep-va-goc-ca-phe-01",
+      "image": "bep-va-goc-ca-phe/01-trang-sua-1",
+      "title": "Quầy cà phê cạnh cửa · Xám nâu & vàng hồng",
+      "layout": "Chữ L",
+      "space": "Quầy pha chế bên cửa sổ",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và vàng hồng, chữ l, quầy pha chế bên cửa sổ."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-02",
+      "image": "bep-va-goc-ca-phe/02-taupe-1",
+      "title": "Quầy cà phê cạnh cửa · Xanh đậm & trắng",
+      "layout": "Chữ L",
+      "space": "Quầy pha chế bên cửa sổ",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh đậm và trắng, chữ l, quầy pha chế bên cửa sổ."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-03",
+      "image": "bep-va-goc-ca-phe/03-xanh-petrol-1",
+      "title": "Quầy cà phê cạnh cửa · Xám đậm & trắng xanh",
+      "layout": "Chữ L",
+      "space": "Quầy pha chế bên cửa sổ",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và trắng xanh, chữ l, quầy pha chế bên cửa sổ."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-04",
+      "image": "bep-va-goc-ca-phe/04-trang-sua-2",
+      "title": "Góc sáng đầu ngày · Nâu khói nhũ & xanh nhạt",
+      "layout": "Chữ I + bán đảo",
+      "space": "Bếp có bàn ăn sáng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối nâu khói nhũ và xanh nhạt, chữ i + bán đảo, bếp có bàn ăn sáng."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-05",
+      "image": "bep-va-goc-ca-phe/05-taupe-2",
+      "title": "Góc sáng đầu ngày · Xanh mint & xám nhũ",
+      "layout": "Chữ I + bán đảo",
+      "space": "Bếp có bàn ăn sáng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh mint và xám nhũ, chữ i + bán đảo, bếp có bàn ăn sáng."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-06",
+      "image": "bep-va-goc-ca-phe/06-xanh-petrol-2",
+      "title": "Góc sáng đầu ngày · Xám đậm nhũ & vàng nhũ",
+      "layout": "Chữ I + bán đảo",
+      "space": "Bếp có bàn ăn sáng",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm nhũ và vàng nhũ, chữ i + bán đảo, bếp có bàn ăn sáng."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-07",
+      "image": "bep-va-goc-ca-phe/07-trang-sua-3",
+      "title": "Tủ pha chế riêng · Xanh đậm & trắng nhũ",
+      "layout": "Chữ U",
+      "space": "Bếp có hốc pha chế",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh đậm và trắng nhũ, chữ u, bếp có hốc pha chế."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-08",
+      "image": "bep-va-goc-ca-phe/08-taupe-3",
+      "title": "Tủ pha chế riêng · Be & xanh nhạt",
+      "layout": "Chữ U",
+      "space": "Bếp có hốc pha chế",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối be và xanh nhạt, chữ u, bếp có hốc pha chế."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-09",
+      "image": "bep-va-goc-ca-phe/09-xanh-petrol-3",
+      "title": "Tủ pha chế riêng · Xám nhạt & vàng hồng",
+      "layout": "Chữ U",
+      "space": "Bếp có hốc pha chế",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nhạt và vàng hồng, chữ u, bếp có hốc pha chế."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-10",
+      "image": "bep-va-goc-ca-phe/10-trang-sua-4",
+      "title": "Đảo và góc thưởng thức · Xám nâu & trắng nhũ",
+      "layout": "Chữ L + đảo",
+      "space": "Bếp cạnh góc ngồi cà phê",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nâu và trắng nhũ, chữ l + đảo, bếp cạnh góc ngồi cà phê."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-11",
+      "image": "bep-va-goc-ca-phe/11-taupe-4",
+      "title": "Đảo và góc thưởng thức · Nâu khói nhũ & trắng xanh",
+      "layout": "Chữ L + đảo",
+      "space": "Bếp cạnh góc ngồi cà phê",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối nâu khói nhũ và trắng xanh, chữ l + đảo, bếp cạnh góc ngồi cà phê."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-12",
+      "image": "bep-va-goc-ca-phe/12-xanh-petrol-4",
+      "title": "Đảo và góc thưởng thức · Xám đậm & xanh mint",
+      "layout": "Chữ L + đảo",
+      "space": "Bếp cạnh góc ngồi cà phê",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám đậm và xanh mint, chữ l + đảo, bếp cạnh góc ngồi cà phê."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-13",
+      "image": "bep-va-goc-ca-phe/13-trang-sua-5",
+      "title": "Quầy nhỏ bên sân · Xám nhũ & xanh đậm",
+      "layout": "Song song",
+      "space": "Bếp pha chế hướng sân",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xám nhũ và xanh đậm, song song, bếp pha chế hướng sân."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-14",
+      "image": "bep-va-goc-ca-phe/14-taupe-5",
+      "title": "Quầy nhỏ bên sân · Vàng nhũ & be",
+      "layout": "Song song",
+      "space": "Bếp pha chế hướng sân",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối vàng nhũ và be, song song, bếp pha chế hướng sân."
+    },
+    {
+      "id": "bep-va-goc-ca-phe-15",
+      "image": "bep-va-goc-ca-phe/15-xanh-petrol-5",
+      "title": "Quầy nhỏ bên sân · Xanh mint & vàng hồng",
+      "layout": "Song song",
+      "space": "Bếp pha chế hướng sân",
+      "alt": "Phối cảnh AI bếp cánh bóng kính phối xanh mint và vàng hồng, song song, bếp pha chế hướng sân."
+    }
+  ]
+}

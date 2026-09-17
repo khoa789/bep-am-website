@@ -3,6 +3,7 @@ import EditorialLayout from "../../layouts/editorial-layout.astro";
 import CollectionAlbum from "../../components/collection-album.astro";
 import { collectionAlbums } from "../../data/collection-albums";
 import { collections, kitchenConcepts } from "../../data/editorial-content";
+import "../../styles/collection-discovery.css";
 export function getStaticPaths() {
   return collections.map((collection) => ({
     params: { slug: collection.slug },
@@ -10,6 +11,9 @@ export function getStaticPaths() {
   }));
 }
 const { collection } = Astro.props;
+const originalCover = kitchenConcepts.find((item) => item.image === collection.image);
+const collectionIndex = collections.findIndex((item) => item.slug === collection.slug);
+const relatedCollections = [1, 2].map((offset) => collections[(collectionIndex + offset) % collections.length]);
 ---
 
 <EditorialLayout
@@ -18,18 +22,21 @@ const { collection } = Astro.props;
   image={`/images/${collection.image}-1600.webp`}
   category="Bộ sưu tập bếp đẹp"
 >
-  <figure class="editorial-cover">
+  <nav class="collection-navigation" aria-label="Điều hướng bộ sưu tập">
+    <a class="text-link" href="/bo-suu-tap/">← Xem tất cả {collections.length} bộ sưu tập</a>
+  </nav>
+  {originalCover && <figure class="editorial-cover">
     <img
       src={`/images/${collection.image}-1600.webp`}
       width="1600"
       height="900"
-      alt={kitchenConcepts.find((item) => item.image === collection.image)?.alt}
+      alt={originalCover.alt}
     />
     <figcaption>
       Phối cảnh ý tưởng tạo bằng AI, lấy cảm hứng từ vật liệu Lecmax. Cấu hình
       được tư vấn theo mặt bằng thực tế.
     </figcaption>
-  </figure>
+  </figure>}
   <CollectionAlbum
     images={collectionAlbums[collection.slug] ?? []}
     slug={collection.slug}
@@ -44,7 +51,7 @@ const { collection } = Astro.props;
       </section>
     ))}
   </div>
-  <div class="collection-gallery">
+  {collection.images.length > 0 && <div class="collection-gallery">
     {collection.images
       .filter((number) => `kitchen-concept-${number}` !== collection.image)
       .map((number) => (
@@ -61,15 +68,15 @@ const { collection } = Astro.props;
           </figcaption>
         </figure>
       ))}
-  </div>
+  </div>}
   <a class="button button--primary" href="#tu-van">
     Tư vấn cho không gian của bạn ↗
   </a>
   <nav class="related-links" aria-label="Bộ sưu tập khác">
-    {collections
-      .filter((item) => item.slug !== collection.slug)
+    {relatedCollections
       .map((item) => (
         <a href={`/bo-suu-tap/${item.slug}/`}>{item.title} ↗</a>
       ))}
+    <a href="/bo-suu-tap/">Xem tất cả {collections.length} bộ sưu tập ↗</a>
   </nav>
 </EditorialLayout>

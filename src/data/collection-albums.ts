@@ -1,3 +1,6 @@
+import expandedAlbums from "./collection-albums-expanded.json";
+import aerialAlbums from "./collection-albums-aerial.json";
+
 export interface CollectionAlbumImage {
   id: string;
   image: string;
@@ -5,9 +8,12 @@ export interface CollectionAlbumImage {
   layout: string;
   space: string;
   alt: string;
+  colorNotes?: string;
 }
 
 export const collectionAlbums: Record<string, CollectionAlbumImage[]> = {
+  ...expandedAlbums,
+  ...aerialAlbums,
   "can-ho-tinh-gon": [
     {
       "id": "can-ho-tinh-gon-01",
