@@ -19,3 +19,6 @@ coverage/
 .DS_Store
 .idea/
 .vscode/
+
+# Full-resolution generated originals stay local; optimized copies are published.
+/output/imagegen/collection-albums/*/*.png
