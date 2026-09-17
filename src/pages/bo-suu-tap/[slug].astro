@@ -1,5 +1,7 @@
 ---
 import EditorialLayout from "../../layouts/editorial-layout.astro";
+import CollectionAlbum from "../../components/collection-album.astro";
+import { collectionAlbums } from "../../data/collection-albums";
 import { collections, kitchenConcepts } from "../../data/editorial-content";
 export function getStaticPaths() {
   return collections.map((collection) => ({
@@ -28,6 +30,11 @@ const { collection } = Astro.props;
       được tư vấn theo mặt bằng thực tế.
     </figcaption>
   </figure>
+  <CollectionAlbum
+    images={collectionAlbums[collection.slug] ?? []}
+    slug={collection.slug}
+    title={collection.title}
+  />
   <div class="editorial-prose">
     <h2>{collection.intro}</h2>
     {collection.sections.map((section) => (

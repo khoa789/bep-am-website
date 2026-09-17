@@ -1,0 +1,157 @@
+---
+import { collectionImagePath, type CollectionAlbumImage } from "../data/collection-albums";
+import "../styles/collection-album.css";
+interface Props {
+  images: CollectionAlbumImage[];
+  slug: string;
+  title: string;
+}
+const { images, slug, title } = Astro.props;
+---
+
+<section class="collection-album" data-collection-album aria-labelledby={`album-heading-${slug}`}>
+  <header class="collection-album__intro">
+    <h2 id={`album-heading-${slug}`}>{images.length} góc nhìn, thêm cảm hứng</h2>
+    <p>Cánh phẳng bóng kính, nhiều sắc màu và cách bố trí. Chọn một ảnh để xem toàn khung.</p>
+    <p class="collection-album__note">Phối cảnh ý tưởng tạo bằng AI, không phải công trình đã thi công. Ghi lại mã ảnh yêu thích để trao đổi khi tư vấn.</p>
+  </header>
+  <div class="collection-album__grid">
+    {images.map((image, index) => (
+      <figure class="collection-album__entry" id={image.id}>
+        <a
+          class="collection-album__image-link"
+          href={collectionImagePath(image, 1600)}
+          data-album-image
+          data-title={image.title}
+          data-details={`${image.layout} · ${image.space}`}
+          data-id={image.id}
+          aria-label={`Xem ảnh ${index + 1}: ${image.title}`}
+        >
+          <img
+            src={collectionImagePath(image, 800)}
+            srcset={`${collectionImagePath(image, 800)} 800w, ${collectionImagePath(image, 1600)} 1600w`}
+            sizes="(max-width: 700px) calc(100vw - 48px), (max-width: 1296px) calc((100vw - 96px) / 2), 584px"
+            width="1600" height="900" loading="lazy" decoding="async" alt={image.alt}
+          />
+          <span class="collection-album__image-action">Xem toàn ảnh ↗</span>
+        </a>
+        <figcaption>
+          <div class="collection-album__caption-heading"><span>{String(index + 1).padStart(2, "0")}</span><h3>{image.title}</h3></div>
+          <p>{image.layout} · {image.space}</p>
+          <p class="collection-album__id">Mã ảnh: <span>{image.id}</span></p>
+        </figcaption>
+      </figure>
+    ))}
+  </div>
+  <dialog class="collection-album__viewer" aria-labelledby={`album-viewer-title-${slug}`} aria-describedby={`album-viewer-details-${slug}`}>
+    <div class="collection-album__viewer-shell">
+      <header class="collection-album__viewer-header"><p>{title}</p><button type="button" data-album-close autofocus>Đóng <span aria-hidden="true">×</span></button></header>
+      <div class="collection-album__stage"><img data-album-full-image alt="" /><p data-album-status role="status"></p></div>
+      <div class="collection-album__viewer-caption">
+        <div><h2 id={`album-viewer-title-${slug}`} data-album-title></h2><p id={`album-viewer-details-${slug}`} data-album-details></p><p data-album-id></p></div>
+        <a href="#" data-album-original target="_blank" rel="noopener">Mở ảnh gốc ↗</a>
+      </div>
+      <div class="collection-album__controls">
+        <button type="button" data-album-previous aria-label="Ảnh trước">← <span>Ảnh trước</span></button>
+        <p data-album-counter aria-live="polite" aria-atomic="true"></p>
+        <button type="button" data-album-next aria-label="Ảnh sau"><span>Ảnh sau</span> →</button>
+      </div>
+      <div class="collection-album__thumbnails" aria-label="Chọn ảnh trong bộ sưu tập">
+        {images.map((image, index) => (
+          <button type="button" data-album-thumbnail={index} aria-label={`Ảnh ${index + 1}: ${image.title}`}>
+            <img src={collectionImagePath(image, 320)} width="320" height="180" loading="lazy" decoding="async" alt="" />
+            <span>{String(index + 1).padStart(2, "0")}</span>
+          </button>
+        ))}
+      </div>
+      <p class="collection-album__hint">Phối cảnh AI · Dùng ← → để chuyển ảnh, Esc để đóng.</p>
+    </div>
+  </dialog>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>("[data-collection-album]").forEach((root) => {
+    const links = [...root.querySelectorAll<HTMLAnchorElement>("[data-album-image]")];
+    const dialog = root.querySelector<HTMLDialogElement>("dialog")!;
+    if (typeof dialog.showModal !== "function" || !links.length) return;
+    const fullImage = root.querySelector<HTMLImageElement>("[data-album-full-image]")!;
+    const status = root.querySelector<HTMLElement>("[data-album-status]")!;
+    const close = root.querySelector<HTMLButtonElement>("[data-album-close]")!;
+    const thumbnails = [...root.querySelectorAll<HTMLButtonElement>("[data-album-thumbnail]")];
+    const thumbnailStrip = root.querySelector<HTMLElement>(".collection-album__thumbnails")!;
+    let index = 0;
+    let opener: HTMLAnchorElement | undefined;
+    let previousOverflow = "";
+
+    function show(next: number) {
+      index = (next + links.length) % links.length;
+      const link = links[index];
+      fullImage.hidden = false;
+      status.textContent = "Đang tải ảnh…";
+      fullImage.alt = link.querySelector("img")!.alt;
+      fullImage.src = link.href;
+      root.querySelector("[data-album-title]")!.textContent = link.dataset.title!;
+      root.querySelector("[data-album-details]")!.textContent = link.dataset.details!;
+      root.querySelector("[data-album-id]")!.textContent = `Mã ảnh: ${link.dataset.id}`;
+      root.querySelector("[data-album-counter]")!.textContent = `${index + 1} / ${links.length}`;
+      root.querySelector<HTMLAnchorElement>("[data-album-original]")!.href = link.href;
+      thumbnails.forEach((thumbnail, itemIndex) => thumbnail.setAttribute("aria-current", String(itemIndex === index)));
+      const stripBounds = thumbnailStrip.getBoundingClientRect();
+      const thumbnailBounds = thumbnails[index].getBoundingClientRect();
+      const horizontalOffset = thumbnailBounds.left < stripBounds.left
+        ? thumbnailBounds.left - stripBounds.left
+        : thumbnailBounds.right > stripBounds.right
+          ? thumbnailBounds.right - stripBounds.right
+          : 0;
+      if (horizontalOffset !== 0) {
+        thumbnailStrip.scrollTo({
+          left: thumbnailStrip.scrollLeft + horizontalOffset,
+          behavior: "instant",
+        });
+      }
+    }
+
+    fullImage.addEventListener("load", () => { status.textContent = ""; });
+    fullImage.addEventListener("error", () => {
+      fullImage.hidden = true;
+      status.textContent = "Không tải được ảnh. Hãy thử ảnh khác hoặc mở ảnh gốc.";
+    });
+    links.forEach((link, itemIndex) => link.addEventListener("click", (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button !== 0) return;
+      event.preventDefault();
+      opener = link;
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      dialog.showModal();
+      dialog.scrollTop = 0;
+      show(itemIndex);
+      close.focus({ preventScroll: true });
+    }));
+    close.addEventListener("click", () => dialog.close());
+    root.querySelector("[data-album-previous]")!.addEventListener("click", () => show(index - 1));
+    root.querySelector("[data-album-next]")!.addEventListener("click", () => show(index + 1));
+    thumbnails.forEach((thumbnail, itemIndex) => thumbnail.addEventListener("click", () => show(itemIndex)));
+    dialog.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        event.preventDefault();
+        show(index + (event.key === "ArrowRight" ? 1 : -1));
+      }
+      if (event.key === "Tab") {
+        const focusable = [...dialog.querySelectorAll<HTMLElement>("button:not(:disabled), a[href]")].filter((element) => element.getClientRects().length);
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+    dialog.addEventListener("close", () => {
+      document.body.style.overflow = previousOverflow;
+      fullImage.removeAttribute("src");
+      opener?.focus({ preventScroll: true });
+    });
+  });
+</script>
